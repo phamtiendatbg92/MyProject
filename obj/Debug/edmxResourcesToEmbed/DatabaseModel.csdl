@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="stocksqlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bctc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="mack" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TaiSanNganHan" Type="Int64" Nullable="false" />
+    <Property Name="TienVaCacKhoanTuongDuongTien" Type="Int64" Nullable="false" />
+    <Property Name="Tien" Type="Int64" Nullable="false" />
+    <Property Name="CacKhoanTuongDuongTien" Type="Int64" Nullable="false" />
+    <Property Name="CacKhoanDauTuTaiChinhNganHan" Type="Int64" Nullable="false" />
+    <Property Name="ChungKhoanKinhDoanh" Type="Int64" Nullable="false" />
+    <Property Name="Quy" Type="Int32" Nullable="false" />
+    <Property Name="Nam" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DuPhongGiamGiaChungKhoanKinhDoanh" Type="Int64" Nullable="false" />
+    <Property Name="DauTuNamGiuDenNgayDaoHan" Type="Int64" Nullable="false" />
+    <Property Name="CacKhoanPhaiThuNganHan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuKhachHang" Type="Int64" Nullable="false" />
+    <Property Name="TraTruocChoNguoiBan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuNoiBoNganHan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuTheoTienDoKeHoachHopDongXayDung" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuVeChoVayNganHan" Type="Int64" Nullable="false" />
+    <Property Name="CacKhoanPhaiThuKhac" Type="Int64" Nullable="false" />
+    <Property Name="DuPhongPhaiThuNganHanKhoDoi" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanThieuChoXuLy" Type="Int64" Nullable="false" />
+    <Property Name="ThueVaCacKhoanKhacPhaiThuNhaNuoc" Type="Int64" Nullable="false" />
+    <Property Name="GiaoDichMuaBanLaiTraiPhieuChinhPhu" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanNganHanKhac" Type="Int64" Nullable="false" />
+    <Property Name="HangTonKhoTotal" Type="Int64" Nullable="false" />
+    <Property Name="HangTonKho" Type="Int64" Nullable="false" />
+    <Property Name="DuPhongGiamGiaHangTonKho" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanNganHanKhacTotal" Type="Int64" Nullable="false" />
+    <Property Name="ChiPhiTraTruocNganHan" Type="Int64" Nullable="false" />
+    <Property Name="ThueGTGTDuocKhauTru" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="CacKhoanPhaiThuDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuDaiHanCuaKhachHang" Type="Int64" Nullable="false" />
+    <Property Name="TraTruocChoNguoiBanDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuVeChoVayDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="PhaiThuDaiHanKhac" Type="Int64" Nullable="false" />
+    <Property Name="DuPhongPhaiThuKhoDoi" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanCoDinh" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanCoDinhHuuHinh" Type="Int64" Nullable="false" />
+    <Property Name="NguyenGiaTSHH" Type="Int64" Nullable="false" />
+    <Property Name="GiaTriHaoMonLuyKeTSHH" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanCoDinhThueTaiChinh" Type="Int64" Nullable="false" />
+    <Property Name="NguyenGiaTSCDTTC" Type="Int64" Nullable="false" />
+    <Property Name="GiaTriHaoMonLuyKeTSCDTTC" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanCoDinhVoHinh" Type="Int64" Nullable="false" />
+    <Property Name="NguyenGiaTSCDVH" Type="Int64" Nullable="false" />
+    <Property Name="GiaTriHaoMonLuyKeTSCDVH" Type="Int64" Nullable="false" />
+    <Property Name="BatDongSanDauTu" Type="Int64" Nullable="false" />
+    <Property Name="NguyenGiaBDSDT" Type="Int64" Nullable="false" />
+    <Property Name="GiaTriHaoMonLuyKeBDSDT" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanDangDoDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="ChiPhiSxkdDoDangDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="ChiPhiXayDungCoBanDoDang" Type="Int64" Nullable="false" />
+    <Property Name="DauTuTaiChinhDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="DauTuVaoCtyCon" Type="Int64" Nullable="false" />
+    <Property Name="DauTuVaoCtyLienKetLienDoanh" Type="Int64" Nullable="false" />
+    <Property Name="DauTuGopVonVaoDonViKhac" Type="Int64" Nullable="false" />
+    <Property Name="DuPhongGiamGiaDauTuDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="C5_5_DauTuNamGiuDenNgayDaoHan" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanDaiHanKhac" Type="Int64" Nullable="false" />
+    <Property Name="ChiPhiTraTruocDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="TaiSanThueThuNhapHoanLai" Type="Int64" />
+    <Property Name="ThietBiVatTuPhuTungThayTheDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="C6_4_TaiSanDaiHanKhac" Type="Int64" Nullable="false" />
+    <Property Name="C6_5_KyQuyKyCuocDaiHan" Type="Int64" Nullable="false" />
+    <Property Name="C6_6_LoiTheThuongMai" Type="Int64" Nullable="false" />
+    <Property Name="TongTaiSan" Type="Int64" Nullable="false" />
+    <Property Name="NoPhaiTra" Type="Int64" Nullable="false" />
+    <Property Name="C1_NoNganHan" Type="Int64" Nullable="false" />
+    <Property Name="C1_1_PhaiTraNguoiBanNganHan" Type="Int64" Nullable="false" />
+    <Property Name="C1_2_NguoiMuaTraTienTruocNganHan" Type="Int64" Nullable="false" />
+    <Property Name="C1_3_ThueVaCacKhoanPhaiNopNhaNuoc" Type="Int64" Nullable="false" />
+    <Property Name="C1_4_PhaiTraNguoiLaoDong" Type="Int64" Nullable="false" />
+    <Property Name="C1_5_ChiPhiPhaiTraNganHan" Type="Int64" Nullable="false" />
+    <Property Name="C1_6_PhaiTraNoiBoNganHan" Type="Int64" Nullable="false" />
+    <Property Name="C1_7_PhaiTraTheoTienDoKeHoachHDXD" Type="Int64" Nullable="false" />
+    <Property Name="C1_8_DoanhThuChuaDuocThucHienNganHan" Type="Int64" />
+    <Property Name="C1_9_PhaiTraNganHanKhac" Type="Int64" />
+    <Property Name="C1_10_VayVaNoThueTaichinhNganHan" Type="Int64" />
+    <Property Name="C1_11_DuPhongPhaiTraNganHan" Type="Int64" />
+    <Property Name="C1_12_QuyKhenThuongPhucLoi" Type="Int64" />
+    <Property Name="C1_13_QuyBinhOnGia" Type="Int64" />
+    <Property Name="C1_14_GiaoDichMuaBanTraiPhieuChinhPhu" Type="Int64" />
+    <Property Name="C2_NoDaiHan" Type="Int64" />
+    <Property Name="C2_1_PhaiTraDaiHanNguoiBan" Type="Int64" />
+    <Property Name="C2_2_NguoiMuaTraTienTruocDaiHan" Type="Int64" />
+    <Property Name="C2_3_ChiPhiPhaiTraDaiHan" Type="Int64" />
+    <Property Name="C2_4_PhaiTraNoiBoVeVonKD" Type="Int64" />
+    <Property Name="C2_5_PhaiTraDaiHanNoiBoDaiHan" Type="Int64" />
+    <Property Name="C2_6_DoanhThuChuaThucHienDaiHan" Type="Int64" />
+    <Property Name="C2_7_PhaiTraDaiHanKhac" Type="Int64" />
+    <Property Name="C2_8_VayVaNoThueTaiChinhDaiHan" Type="Int64" />
+    <Property Name="C2_9_TraiPhieuChuyenDoi" Type="Int64" />
+    <Property Name="C2_11_ThueThuNhapHoanLaiPhaiTra" Type="Int64" />
+    <Property Name="C2_12_DuPhongPhaiTraDaiHan" Type="Int64" />
+    <Property Name="C2_13_QuyPhatTrienKhoaHocCongNghe" Type="Int64" />
+    <Property Name="II_VonChuSoHuu" Type="Int64" />
+    <Property Name="C1_VonChuSoHuu" Type="Int64" />
+    <Property Name="C1_1_VonGopCuaChuSoHuu" Type="Int64" />
+    <Property Name="C1_1_1_CoPhieuPhoThongCoQuyenBieuQuyet" Type="Int64" />
+    <Property Name="C1_1_2_CoPhieuUuDai" Type="Int64" />
+    <Property Name="C1_2_10_CoPhieuUuDai" Type="Int64" />
+    <Property Name="C1_2_ThangDuVonCoPhan" Type="Int64" />
+    <Property Name="C1_3_QuyenChonChuyenDoiTraiPhieu" Type="Int64" />
+    <Property Name="C1_4_VonKhacCuaChuSoHuu" Type="Int64" />
+    <Property Name="C1_5_CoPhieuQuy" Type="Int64" />
+    <Property Name="C1_6_ChenhLechDanhGiaLaiTaiSan" Type="Int64" />
+    <Property Name="C1_7_ChenhLechTyGiaHoiDoai" Type="Int64" />
+    <Property Name="C1_8_QuyDauTuPhatTrien" Type="Int64" />
+    <Property Name="C1_9_QuyHoTroSapXepDoanhNghiep" Type="Int64" />
+    <Property Name="C1_10_QuyKhacThuocVonChuSoHuu" Type="Int64" />
+    <Property Name="C1_11_LoiNhuanSauThueChuaPhanPhoi" Type="Int64" />
+    <Property Name="C1_11_1_LNSTChuaPhanPhoiLuyKeDenCuoiKyTruoc" Type="Int64" />
+    <Property Name="C1_11_2_LNSTChuaPhanPhoiKyNay" Type="Int64" />
+    <Property Name="C1_12_NguonVonDauTuXDCB" Type="Int64" />
+    <Property Name="C1_13_LoiIchCoDongKhongKiemSoat" Type="Int64" />
+    <Property Name="C1_14_PhuTroiHopNhatCongTyCon" Type="Int64" />
+    <Property Name="C2_NguonKinhPhiVaCacQuyKhac" Type="Int64" />
+    <Property Name="C2_1_NguonKinhPhi" Type="Int64" />
+    <Property Name="C2_2_NguonKinhPhiDaHinhThanhTSCD" Type="Int64" />
+    <Property Name="III_LoiIchCuaCoDongThieuSo" Type="Int64" />
+    <Property Name="C1_DoanhThuBanHangVaCungcapDV" Type="Int64" />
+    <Property Name="C2_CacKhoanGiamTruDanhThu" Type="Int64" />
+    <Property Name="C3_DoanhThuThuanVeBanHangVaCungCapDV" Type="Int64" />
+    <Property Name="C4_GiaVonHangBan" Type="Int64" />
+    <Property Name="C5_LoiNhuanGopVeBanHangVaCungCapDV" Type="Int64" />
+    <Property Name="C6_DoanhThuHoatDongTaiChinh" Type="Int64" />
+    <Property Name="C7_ChiPhiTaiChinh" Type="Int64" />
+    <Property Name="C7_1_ChiPhiLaiVay" Type="Int64" />
+    <Property Name="C8_PhanLaiLoTrongCtyLienDoanhLienKet" Type="Int64" />
+    <Property Name="C9_ChiPhiBanHang" Type="Int64" />
+    <Property Name="C10_ChiPhiQuanLyDoanhNghiep" Type="Int64" />
+    <Property Name="C11_LoiNhuanThuanTuHoatDongKinhDoanh" Type="Int64" />
+    <Property Name="C12_ThuNhapKhac" Type="Int64" />
+    <Property Name="C13_ChiPhiKhac" Type="Int64" />
+    <Property Name="C14_LoiNhuanKhac" Type="Int64" />
+    <Property Name="C15_TongLoiNhuanKeToanTruocThue" Type="Int64" />
+    <Property Name="C16_ChiPhiThueTNDNHienHanh" Type="Int64" />
+    <Property Name="C17_ChiPhiThueTNDNHoanLai" Type="Int64" />
+    <Property Name="C18_LoiNhuanSauThueTNDN" Type="Int64" />
+    <Property Name="C18_1_LoiIchCuaCoDongThieuSo" Type="Int64" />
+    <Property Name="C18_2_LoiNhuanSauThueCuaCtyMe" Type="Int64" />
+    <Property Name="C19_LaiCoBanTrenCoPhieu" Type="Int64" />
+  </EntityType>
+  <EntityType Name="congty">
+    <Key>
+      <PropertyRef Name="mack" />
+    </Key>
+    <Property Name="mack" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tencty" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nhomnganh" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="socp" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bctc" EntityType="Self.bctc" />
+    <EntitySet Name="congty" EntityType="Self.congty" />
+  </EntityContainer>
+</Schema>

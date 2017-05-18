@@ -11,5 +11,6 @@ namespace StockAnalysis.Utility
         public static int QUY_HIEN_TAI { get; set; }
         public static int NAM_HIEN_TAI { get; set; }
         public const int HESO_DOANH_THU = 10;
+        public const int HESO_LOI_NHUAN = 11;
     }
 }

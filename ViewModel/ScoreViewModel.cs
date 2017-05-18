@@ -95,10 +95,43 @@ namespace StockAnalysis.ViewModel
         {
             double diem = 0;
             diem += TinhDiemDoanhThu(listBctc);
-
+            diem += TinhDiemLoiNhuan(listBctc);
             return diem;
         }
+        private double TinhDiemLoiNhuan(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_LOI_NHUAN;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
 
+                bctc bcQuyTruoc = TimBaoCao(listBctc, currentQuy, currentYear - 1);
+                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == null || bcQuyHienTai.C18_LoiNhuanSauThueTNDN == null)
+                {
+                    break;
+                }
+
+                long loiNhuanHienTai = (long)bcQuyHienTai.C18_LoiNhuanSauThueTNDN;
+                long loiNhuanQuyTruoc = (long)bcQuyTruoc.C18_LoiNhuanSauThueTNDN;
+                if (loiNhuanQuyTruoc != 0)
+                {
+                    diem += (loiNhuanHienTai - loiNhuanQuyTruoc) * heSo * 100 / loiNhuanQuyTruoc;
+                }
+                if (currentQuy == 1)
+                {
+                    currentQuy = 4;
+                    currentYear--;
+                }
+                else
+                {
+                    currentQuy--;
+                }
+            }
+            return diem;
+        }
         private bctc TimBaoCao(List<bctc> listBctc, int quy, int nam)
         {
             for (int i = 0; i < listBctc.Count; i++)
