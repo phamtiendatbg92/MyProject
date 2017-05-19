@@ -328,17 +328,17 @@
           <Property Name="nhomnganh" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="socp" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="bctc" EntityType="Self.bctc" />
-          <EntitySet Name="congty" EntityType="Self.congty" />
+        <EntityContainer Name="stocksqlEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="bctcs" EntityType="Self.bctc" />
+          <EntitySet Name="congties" EntityType="Self.congty" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="stocksqlModelStoreContainer" CdmEntityContainer="Entities">
-          <EntitySetMapping Name="bctc">
+        <EntityContainerMapping StorageEntityContainer="stocksqlModelStoreContainer" CdmEntityContainer="stocksqlEntities">
+          <EntitySetMapping Name="bctcs">
             <EntityTypeMapping TypeName="stocksqlModel.bctc">
               <MappingFragment StoreEntitySet="bctc">
                 <ScalarProperty Name="mack" ColumnName="mack" />
@@ -487,7 +487,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="congty">
+          <EntitySetMapping Name="congties">
             <EntityTypeMapping TypeName="stocksqlModel.congty">
               <MappingFragment StoreEntitySet="congty">
                 <ScalarProperty Name="mack" ColumnName="mack" />
@@ -511,7 +511,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="true" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

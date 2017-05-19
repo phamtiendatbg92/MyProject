@@ -24,7 +24,7 @@ namespace StockAnalysis.Views
     /// </summary>
     public partial class DbOperView : UserControl
     {
-        public static Entities entities = new Entities();
+        public static stocksqlEntities entities = new stocksqlEntities();
 
         public DbOperView()
         {
@@ -1198,7 +1198,7 @@ namespace StockAnalysis.Views
                 cty.nhomnganh = "";
                 cty.socp = 0;
                 cty.tencty = "";
-                entities.congTys.Add(cty);
+                entities.congties.Add(cty);
             }
             entities.SaveChanges();
         }

@@ -67,25 +67,25 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="bctc.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="congty.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseModel.Context.cs">
+    <Compile Include="DataBaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.Context.tt</DependentUpon>
+      <DependentUpon>DataBaseModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseModel.cs">
+    <Compile Include="DataBaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseModel.Designer.cs">
+    <Compile Include="DataBaseModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
+      <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DatabaseUtility.cs" />
@@ -144,12 +144,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DatabaseModel.edmx">
+    <EntityDeploy Include="DataBaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DatabaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataBaseModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DatabaseModel.edmx.diagram">
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
+    <None Include="DataBaseModel.edmx.diagram">
+      <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -165,15 +165,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DatabaseModel.Context.tt">
+    <Content Include="DataBaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabaseModel.Context.cs</LastGenOutput>
+      <DependentUpon>DataBaseModel.edmx</DependentUpon>
+      <LastGenOutput>DataBaseModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DatabaseModel.tt">
+    <Content Include="DataBaseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabaseModel.cs</LastGenOutput>
+      <DependentUpon>DataBaseModel.edmx</DependentUpon>
+      <LastGenOutput>DataBaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,10 +13,10 @@ namespace StockAnalysis
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class stocksqlEntities : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public stocksqlEntities()
+            : base("name=stocksqlEntities")
         {
         }
     
@@ -26,6 +26,6 @@ namespace StockAnalysis
         }
     
         public DbSet<bctc> bctcs { get; set; }
-        public DbSet<congty> congTys { get; set; }
+        public DbSet<congty> congties { get; set; }
     }
 }

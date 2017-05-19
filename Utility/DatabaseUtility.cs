@@ -8,10 +8,10 @@ namespace StockAnalysis.Utility
 {
     public static class DatabaseUtility
     {
-        private static Entities entities = new Entities();
+        private static stocksqlEntities entities = new stocksqlEntities();
         public static List<congty> GetAllCty()
         {
-            return entities.congTys.ToList();
+            return entities.congties.ToList();
         }
         public static Dictionary<string, List<bctc>> GetAllBctc()
         {

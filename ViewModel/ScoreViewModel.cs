@@ -8,6 +8,13 @@ using System.Threading.Tasks;
 
 namespace StockAnalysis.ViewModel
 {
+    /*
+     * Kiểm tra các giá trị:
+     * Doanh thu
+     * Lợi nhuận sau thuế
+     * Lợi nhuận gộp
+     * Chi phí quản lý doanh nghiệp
+     */
     public class ScoreViewModel : BaseViewModel
     {
         private ObservableCollection<ScoreItemViewModel> m_listScoreItemVM = new ObservableCollection<ScoreItemViewModel>();
@@ -96,8 +103,73 @@ namespace StockAnalysis.ViewModel
             double diem = 0;
             diem += TinhDiemDoanhThu(listBctc);
             diem += TinhDiemLoiNhuan(listBctc);
+            diem += TinhDiemChiPhiQuanLyDn(listBctc);
+            diem += TinhDiemLoiNhuanTrenDoanhThu(listBctc);
             return diem;
         }
+
+        private double TinhDiemLoiNhuanTrenDoanhThu(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_ChiPhiBanHangVaQuanLyDn_LoiNhuanGop;
+            long loiNhuanGop = 0;
+            long chiPhiQuanLyDN = 0;
+            long chiPhiBanHang = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
+                if (bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV == null ||
+                    bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep == null ||
+                    bcQuyHienTai.C9_ChiPhiBanHang == null)
+                {
+                    break;
+                }
+                loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
+                chiPhiQuanLyDN += (long)bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep;
+                chiPhiBanHang += (long)bcQuyHienTai.C9_ChiPhiBanHang;
+                LayQuyTruoc(ref currentQuy, ref currentYear); // Get quý trước đó
+            }
+
+            if (loiNhuanGop != 0)
+            {
+                diem += (100 - (chiPhiQuanLyDN + chiPhiBanHang) * 100 / loiNhuanGop) * heSo;
+            }
+            return diem;
+
+        }
+        private double TinhDiemChiPhiQuanLyDn(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_ChiPhiBanHangVaQuanLyDn_LoiNhuanGop;
+            long loiNhuanGop = 0;
+            long chiPhiQuanLyDN = 0;
+            long chiPhiBanHang = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
+                if (bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV == null ||
+                    bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep == null ||
+                    bcQuyHienTai.C9_ChiPhiBanHang == null)
+                {
+                    break;
+                }
+                loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
+                chiPhiQuanLyDN += (long)bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep;
+                chiPhiBanHang += (long)bcQuyHienTai.C9_ChiPhiBanHang;
+                LayQuyTruoc(ref currentQuy, ref currentYear); // Get quý trước đó
+            }
+
+            if (loiNhuanGop != 0)
+            {
+                diem += (100 - (chiPhiQuanLyDN + chiPhiBanHang) * 100 / loiNhuanGop) * heSo;
+            }
+            return diem;
+        }
+
         private double TinhDiemLoiNhuan(List<bctc> listBctc)
         {
             double diem = 0;
@@ -109,7 +181,13 @@ namespace StockAnalysis.ViewModel
                 bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
 
                 bctc bcQuyTruoc = TimBaoCao(listBctc, currentQuy, currentYear - 1);
-                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == null || bcQuyHienTai.C18_LoiNhuanSauThueTNDN == null)
+                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == 0 ||
+                    bcQuyHienTai.C18_LoiNhuanSauThueTNDN == 0)
+                {
+                    break;
+                }
+                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == null ||
+                    bcQuyHienTai.C18_LoiNhuanSauThueTNDN == null)
                 {
                     break;
                 }
@@ -120,29 +198,11 @@ namespace StockAnalysis.ViewModel
                 {
                     diem += (loiNhuanHienTai - loiNhuanQuyTruoc) * heSo * 100 / loiNhuanQuyTruoc;
                 }
-                if (currentQuy == 1)
-                {
-                    currentQuy = 4;
-                    currentYear--;
-                }
-                else
-                {
-                    currentQuy--;
-                }
+                LayQuyTruoc(ref currentQuy, ref currentYear);
             }
             return diem;
         }
-        private bctc TimBaoCao(List<bctc> listBctc, int quy, int nam)
-        {
-            for (int i = 0; i < listBctc.Count; i++)
-            {
-                if (listBctc[i].Quy == quy && listBctc[i].Nam == nam)
-                {
-                    return listBctc[i];
-                }
-            }
-            return null;
-        }
+
         private double TinhDiemDoanhThu(List<bctc> listBctc)
         {
             double diem = 0;
@@ -154,30 +214,52 @@ namespace StockAnalysis.ViewModel
                 bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
 
                 bctc bcQuyTruoc = TimBaoCao(listBctc, currentQuy, currentYear - 1);
-                if (bcQuyTruoc.C3_DoanhThuThuanVeBanHangVaCungCapDV == null || bcQuyHienTai.C3_DoanhThuThuanVeBanHangVaCungCapDV == null)
+                if (bcQuyTruoc.C3_DoanhThuThuanVeBanHangVaCungCapDV == null ||
+                    bcQuyHienTai.C3_DoanhThuThuanVeBanHangVaCungCapDV == null)
                 {
                     break;
                 }
-
+                if (bcQuyTruoc.C3_DoanhThuThuanVeBanHangVaCungCapDV == 0 ||
+                    bcQuyHienTai.C3_DoanhThuThuanVeBanHangVaCungCapDV == 0)
+                {
+                    break;
+                }
                 long doanhThuHienTai = (long)bcQuyHienTai.C3_DoanhThuThuanVeBanHangVaCungCapDV;
                 long doanhThuQuyTruoc = (long)bcQuyTruoc.C3_DoanhThuThuanVeBanHangVaCungCapDV;
                 if (doanhThuQuyTruoc != 0)
                 {
                     diem += (doanhThuHienTai - doanhThuQuyTruoc) * heSo * 100 / doanhThuQuyTruoc;
                 }
-                if (currentQuy == 1)
-                {
-                    currentQuy = 4;
-                    currentYear--;
-                }
-                else
-                {
-                    currentQuy--;
-                }
+                LayQuyTruoc(ref currentQuy, ref currentYear);
             }
             return diem;
         }
 
+        private void LayQuyTruoc(ref int currentQuy, ref int currentYear)
+        {
+            if (currentQuy == 1)
+            {
+                currentQuy = 4;
+                currentYear--;
+            }
+            else
+            {
+                currentQuy--;
+            }
+        }
+
+        private bctc TimBaoCao(List<bctc> listBctc, int quy, int nam)
+        {
+            for (int i = 0; i < listBctc.Count; i++)
+            {
+                if (listBctc[i].Quy == quy && listBctc[i].Nam == nam)
+                {
+                    return listBctc[i];
+                }
+            }
+            return null;
+
+        }
         #endregion
 
         public ObservableCollection<ScoreItemViewModel> ListScoreItemVM
