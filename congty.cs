@@ -17,6 +17,6 @@ namespace StockAnalysis
         public string mack { get; set; }
         public string tencty { get; set; }
         public string nhomnganh { get; set; }
-        public int socp { get; set; }
+        public long socp { get; set; }
     }
 }

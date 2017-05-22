@@ -28,10 +28,27 @@ namespace StockAnalysis.Utility
                 {
                     List<bctc> listTemp = new List<bctc>();
                     listTemp.Add(bctcList[i]);
-                    bctcDic.Add(bctcList[i].mack,listTemp);
+                    bctcDic.Add(bctcList[i].mack, listTemp);
                 }
             }
             return bctcDic;
+        }
+        public static congty FindCtyByMack(string mack)
+        {
+            List<congty> abc = GetAllCty();
+            int count = abc.Count;
+            for (int i = 0; i < count; i++)
+            {
+                if (abc[i].mack == mack)
+                {
+                    return abc[i];
+                }
+            }
+            return null;
+        }
+        public static void SaveChange()
+        {
+            entities.SaveChanges();
         }
     }
 }

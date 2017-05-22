@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="stocksqlModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="stocksqlModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="bctc">
           <Key>
             <PropertyRef Name="ID" />
@@ -160,14 +160,13 @@
           <Property Name="mack" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="tencty" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="nhomnganh" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="socp" Type="int" Nullable="false" />
+          <Property Name="socp" Type="bigint" Nullable="false" />
         </EntityType>
         <EntityContainer Name="stocksqlModelStoreContainer">
           <EntitySet Name="bctc" EntityType="Self.bctc" Schema="stocksql" store:Type="Tables" />
           <EntitySet Name="congty" EntityType="Self.congty" Schema="stocksql" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="stocksqlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -319,19 +318,19 @@
           <Property Name="C18_2_LoiNhuanSauThueCuaCtyMe" Type="Int64" />
           <Property Name="C19_LaiCoBanTrenCoPhieu" Type="Int64" />
         </EntityType>
+        <EntityContainer Name="stocksqlEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="bctcs" EntityType="Self.bctc" />
+          <EntitySet Name="congties" EntityType="stocksqlModel.congty" />
+        </EntityContainer>
         <EntityType Name="congty">
           <Key>
             <PropertyRef Name="mack" />
           </Key>
-          <Property Name="mack" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="tencty" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nhomnganh" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="socp" Type="Int32" Nullable="false" />
+          <Property Name="mack" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="tencty" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="nhomnganh" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="socp" Type="Int64" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="stocksqlEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="bctcs" EntityType="Self.bctc" />
-          <EntitySet Name="congties" EntityType="Self.congty" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -490,10 +489,10 @@
           <EntitySetMapping Name="congties">
             <EntityTypeMapping TypeName="stocksqlModel.congty">
               <MappingFragment StoreEntitySet="congty">
-                <ScalarProperty Name="mack" ColumnName="mack" />
-                <ScalarProperty Name="tencty" ColumnName="tencty" />
-                <ScalarProperty Name="nhomnganh" ColumnName="nhomnganh" />
                 <ScalarProperty Name="socp" ColumnName="socp" />
+                <ScalarProperty Name="nhomnganh" ColumnName="nhomnganh" />
+                <ScalarProperty Name="tencty" ColumnName="tencty" />
+                <ScalarProperty Name="mack" ColumnName="mack" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

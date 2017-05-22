@@ -14,6 +14,8 @@ namespace StockAnalysis.ViewModel
      * Lợi nhuận sau thuế
      * Lợi nhuận gộp
      * Chi phí quản lý doanh nghiệp
+     * Chi phí lãi vay
+     * Vốn góp của chủ sở hữu
      */
     public class ScoreViewModel : BaseViewModel
     {
@@ -105,7 +107,107 @@ namespace StockAnalysis.ViewModel
             diem += TinhDiemLoiNhuan(listBctc);
             diem += TinhDiemChiPhiQuanLyDn(listBctc);
             diem += TinhDiemLoiNhuanTrenDoanhThu(listBctc);
+            diem += TinhDiemChiPhiLaiVayTrenLoiNhuanGop(listBctc);
+            diem += TinhDiem_LoiNhuanGop_DoanhThu(listBctc);
+            diem += TinhDiem_TangTruongEPS(listBctc);
             return diem;
+        }
+        private double TinhDiem_TangTruongEPS(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_PE;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
+
+                bctc bcQuyTruoc = TimBaoCao(listBctc, currentQuy, currentYear - 1);
+                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == null ||
+                    bcQuyHienTai.C18_LoiNhuanSauThueTNDN == null ||
+                    bcQuyHienTai.C1_1_VonGopCuaChuSoHuu == null ||
+                    bcQuyTruoc.C1_1_VonGopCuaChuSoHuu == null)
+                {
+                    break;
+                }
+                if (bcQuyTruoc.C18_LoiNhuanSauThueTNDN == 0 ||
+                    bcQuyHienTai.C18_LoiNhuanSauThueTNDN == 0 ||
+                    bcQuyHienTai.C1_1_VonGopCuaChuSoHuu == 0 ||
+                    bcQuyTruoc.C1_1_VonGopCuaChuSoHuu == 0)
+                {
+                    break;
+                }
+                long loiNhuanHienTai = (long)bcQuyHienTai.C18_LoiNhuanSauThueTNDN;
+                long soCpHienTai = (long)bcQuyHienTai.C1_1_VonGopCuaChuSoHuu / 10000;
+                double peHienTai = loiNhuanHienTai / soCpHienTai;
+
+                long loiNhuanQuyTruoc = (long)bcQuyTruoc.C18_LoiNhuanSauThueTNDN;
+                long soCpQuyTruoc = (long)bcQuyTruoc.C1_1_VonGopCuaChuSoHuu / 10000;
+                double peQuyTruoc = loiNhuanQuyTruoc / soCpQuyTruoc;
+
+                if (loiNhuanQuyTruoc != 0)
+                {
+                    diem += (peHienTai - peQuyTruoc) * heSo * 100 / peQuyTruoc;
+                }
+                LayQuyTruoc(ref currentQuy, ref currentYear);
+            }
+            return diem;
+        }
+        private double TinhDiem_LoiNhuanGop_DoanhThu(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_LoiNhuanGop_DoanhThuThuan;
+            long loiNhuanGop = 0;
+            long doanhThuThuan = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
+                if (bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV == null ||
+                    bcQuyHienTai.C1_DoanhThuBanHangVaCungcapDV == null)
+                {
+                    break;
+                }
+                loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
+                doanhThuThuan += (long)bcQuyHienTai.C1_DoanhThuBanHangVaCungcapDV;
+                LayQuyTruoc(ref currentQuy, ref currentYear); // Get quý trước đó
+            }
+
+            if (loiNhuanGop != 0)
+            {
+                diem += (loiNhuanGop * 100 / doanhThuThuan) * heSo;
+            }
+            return diem;
+        }
+
+        private double TinhDiemChiPhiLaiVayTrenLoiNhuanGop(List<bctc> listBctc)
+        {
+            double diem = 0;
+            int currentYear = Constants.NAM_HIEN_TAI;
+            int currentQuy = Constants.QUY_HIEN_TAI;
+            int heSo = Constants.HESO_ChiPhiLaiVay_LoiNhuanGop;
+            long loiNhuanGop = 0;
+            long chiPhiLaiVay = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                bctc bcQuyHienTai = TimBaoCao(listBctc, currentQuy, currentYear);
+                if (bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV == null ||
+                    bcQuyHienTai.C7_1_ChiPhiLaiVay == null)
+                {
+                    break;
+                }
+                loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
+                chiPhiLaiVay += (long)bcQuyHienTai.C7_1_ChiPhiLaiVay;
+                LayQuyTruoc(ref currentQuy, ref currentYear, ref heSo); // Get quý trước đó
+            }
+
+            if (loiNhuanGop != 0)
+            {
+                diem += (100 - (chiPhiLaiVay) * 100 / loiNhuanGop) * heSo;
+            }
+            return diem;
+
         }
 
         private double TinhDiemLoiNhuanTrenDoanhThu(List<bctc> listBctc)
@@ -129,7 +231,7 @@ namespace StockAnalysis.ViewModel
                 loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
                 chiPhiQuanLyDN += (long)bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep;
                 chiPhiBanHang += (long)bcQuyHienTai.C9_ChiPhiBanHang;
-                LayQuyTruoc(ref currentQuy, ref currentYear); // Get quý trước đó
+                LayQuyTruoc(ref currentQuy, ref currentYear,ref heSo); // Get quý trước đó
             }
 
             if (loiNhuanGop != 0)
@@ -160,7 +262,7 @@ namespace StockAnalysis.ViewModel
                 loiNhuanGop += (long)bcQuyHienTai.C5_LoiNhuanGopVeBanHangVaCungCapDV;
                 chiPhiQuanLyDN += (long)bcQuyHienTai.C10_ChiPhiQuanLyDoanhNghiep;
                 chiPhiBanHang += (long)bcQuyHienTai.C9_ChiPhiBanHang;
-                LayQuyTruoc(ref currentQuy, ref currentYear); // Get quý trước đó
+                LayQuyTruoc(ref currentQuy, ref currentYear, ref heSo); // Get quý trước đó
             }
 
             if (loiNhuanGop != 0)
@@ -198,7 +300,7 @@ namespace StockAnalysis.ViewModel
                 {
                     diem += (loiNhuanHienTai - loiNhuanQuyTruoc) * heSo * 100 / loiNhuanQuyTruoc;
                 }
-                LayQuyTruoc(ref currentQuy, ref currentYear);
+                LayQuyTruoc(ref currentQuy, ref currentYear, ref heSo);
             }
             return diem;
         }
@@ -230,13 +332,14 @@ namespace StockAnalysis.ViewModel
                 {
                     diem += (doanhThuHienTai - doanhThuQuyTruoc) * heSo * 100 / doanhThuQuyTruoc;
                 }
-                LayQuyTruoc(ref currentQuy, ref currentYear);
+                LayQuyTruoc(ref currentQuy, ref currentYear, ref heSo);
             }
             return diem;
         }
 
-        private void LayQuyTruoc(ref int currentQuy, ref int currentYear)
+        private void LayQuyTruoc(ref int currentQuy, ref int currentYear, ref int heso)
         {
+            heso--;
             if (currentQuy == 1)
             {
                 currentQuy = 4;
