@@ -160,7 +160,6 @@
           <Property Name="mack" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="tencty" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="nhomnganh" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="socp" Type="bigint" Nullable="false" />
         </EntityType>
         <EntityContainer Name="stocksqlModelStoreContainer">
           <EntitySet Name="bctc" EntityType="Self.bctc" Schema="stocksql" store:Type="Tables" />
@@ -329,7 +328,6 @@
           <Property Name="mack" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="tencty" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="nhomnganh" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="socp" Type="Int64" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -489,7 +487,6 @@
           <EntitySetMapping Name="congties">
             <EntityTypeMapping TypeName="stocksqlModel.congty">
               <MappingFragment StoreEntitySet="congty">
-                <ScalarProperty Name="socp" ColumnName="socp" />
                 <ScalarProperty Name="nhomnganh" ColumnName="nhomnganh" />
                 <ScalarProperty Name="tencty" ColumnName="tencty" />
                 <ScalarProperty Name="mack" ColumnName="mack" />

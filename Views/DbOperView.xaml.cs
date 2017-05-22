@@ -135,19 +135,6 @@ namespace StockAnalysis.Views
             }
 
         }
-        private void CapNhatCty_Click(object sender, RoutedEventArgs e)
-        {
-            string text = File.ReadAllText(@"C:\Users\datpt\Desktop\testText.txt");
-            string[] contents = text.Split('_');
-            for (int i = 0; i < contents.Length; i++)
-            {
-                string[] temp = contents[i].Split(';');
-                congty cty = DatabaseUtility.FindCtyByMack(temp[0]);
-                string value = temp[1].Split(',')[0]; // Bỏ phần thập phân đi
-                cty.socp = Convert.ToInt64(value.Replace(".",""));
-            }
-            DatabaseUtility.SaveChange();
-        }
 
 
         private void CapNhatDBButton_Click(object sender, RoutedEventArgs e)
@@ -1212,7 +1199,6 @@ namespace StockAnalysis.Views
 
                 cty.mack = maCks[i];
                 cty.nhomnganh = "";
-                cty.socp = 0;
                 cty.tencty = "";
                 entities.congties.Add(cty);
             }

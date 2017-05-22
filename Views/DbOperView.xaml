@@ -34,11 +34,6 @@
                     VerticalAlignment="Center" 
                     Width="81" 
                     Click="CapNhatDBButton_Click"/>
-            <Button Content="Cap Nhat Cty" 
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center" 
-                    Width="81" 
-                    Click="CapNhatCty_Click"/>
         </StackPanel>
 
         <ProgressBar Maximum="100"

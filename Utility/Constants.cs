@@ -18,10 +18,6 @@ namespace StockAnalysis.Utility
         public const int HESO_ChiPhiBanHangVaQuanLyDn_LoiNhuanGop = 30;
         // Chỉ số chi phí lãi vay / lợi nhuận gộp
         public const int HESO_ChiPhiLaiVay_LoiNhuanGop = 30;
-        // chỉ số lợi nhuận sau thuế / doanh thu thuần
-        public const int HESO_LoiNhuanSauThue_DoanhThu = 30;
-        // chỉ số thu nhập thuần / doanh thu thuần
-        public const int HESO_ThuNhap_DoanhThu = 25;
         // Chỉ số Lợi nhuận gộp / doanh thu thuần
         public const int HESO_LoiNhuanGop_DoanhThuThuan = 30;
 
