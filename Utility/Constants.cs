@@ -20,8 +20,10 @@ namespace StockAnalysis.Utility
         public const int HESO_ChiPhiLaiVay_LoiNhuanGop = 30;
         // Chỉ số Lợi nhuận gộp / doanh thu thuần
         public const int HESO_LoiNhuanGop_DoanhThuThuan = 30;
-
+        // Chỉ số Nợ ngắn hạn / nợ dài hạn
+        public const int HESO_NoNganHan_NoDaiHan = 30;
         // Chỉ số P/E
         public const int HESO_PE = 13;
+        public const int ROE = 100;
     }
 }

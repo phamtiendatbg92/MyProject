@@ -15,7 +15,7 @@
                 <Label Content="Diem: " Width="100"/>
                 <Label Content="{Binding Diem}" Width="100"/>
             </StackPanel>
-            
+
             <Expander FlowDirection="RightToLeft"
                   Header="Chi tiet">
                 <StackPanel FlowDirection="LeftToRight">
@@ -23,29 +23,78 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label Content="2014" Grid.Column="1"/>
-                        <Label Content="2015" Grid.Column="2"/>
-                        <Label Content="2016" Grid.Column="3"/>
+                        <Label Content="Chỉ số" Grid.Column="0"/>
+                        <Label Content="Điểm" Grid.Column="1"/>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Tăng trưởng doanh thu" Grid.Column="0"/>
+                        <Label Content="{Binding DiemTangTruongDoanhThu}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label Content="Chi so doanh thu" Grid.Column="0"/>
-                        <Label Content="{Binding DoanhThu1}" Grid.Column="1"/>
-                        <Label Content="{Binding DoanhThu2}" Grid.Column="2"/>
-                        <Label Content="{Binding DoanhThu3}" Grid.Column="3"/>
+                        <Label Content="Tăng trưởng lợi nhuận" Grid.Column="0"/>
+                        <Label Content="{Binding DiemTangTruongLoiNhuan}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Chi phi quản lý DN / lợi nhuận gộp" Grid.Column="0"/>
+                        <Label Content="{Binding DiemChiPhiQuanLyDN}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Chi phí lãi vay / lợi nhuận gộp" Grid.Column="0"/>
+                        <Label Content="{Binding DiemChiPhiLaiVayTrenLoiNhuanGop}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Lợi nhuận gộp / doanh thu" Grid.Column="0"/>
+                        <Label Content="{Binding DiemLoiNhuanGopTrenDoanhThu}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Tăng trưởng EPS" Grid.Column="0"/>
+                        <Label Content="{Binding DiemTangTruongEPS}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Nợ ngắn hạn trên nợ dài hạn" Grid.Column="0"/>
+                        <Label Content="{Binding DiemNoNganHanTrenNoDaiHan}" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="ROE" Grid.Column="0"/>
+                        <Label Content="{Binding ROE}" Grid.Column="1"/>
                     </Grid>
                 </StackPanel>
 
             </Expander>
         </Grid>
     </Border>
-    
+
 </UserControl>

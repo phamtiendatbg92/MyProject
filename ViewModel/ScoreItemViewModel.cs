@@ -9,9 +9,14 @@ namespace StockAnalysis.ViewModel
     public class ScoreItemViewModel : BaseViewModel
     {
         #region fields
-        private double m_DoanhThu1;
-        private double m_DoanhThu2;
-        private double m_DoanhThu3;
+        private double m_DiemTangTruongDoanhThu;
+        private double m_DiemTangTruongLoiNhuan;
+        private double m_DiemChiPhiQuanLyDN;
+        private double m_DiemChiPhiLaiVayTrenLoiNhuanGop;
+        private double m_DiemLoiNhuanGopTrenDoanhThu;
+        private double m_DiemTangTruongEPS;
+        private double m_DiemNoNganHanTrenNoDaiHan;
+        private double m_ROE = 0;
         private double m_diem;
         private string m_mack;
         #endregion
@@ -36,31 +41,78 @@ namespace StockAnalysis.ViewModel
             }
         }
 
-        public double DoanhThu1
+        public double DiemTangTruongDoanhThu
         {
-            get { return m_DoanhThu1; }
+            get { return m_DiemTangTruongDoanhThu; }
             set
             {
-                m_DoanhThu1 = value;
-                OnPropertyChanged("DoanhThu1");
+                m_DiemTangTruongDoanhThu = value;
+                OnPropertyChanged("DiemTangTruongDoanhThu");
             }
         }
-        public double DoanhThu2
+        public double DiemTangTruongLoiNhuan
         {
-            get { return m_DoanhThu2; }
+            get { return m_DiemTangTruongLoiNhuan; }
             set
             {
-                m_DoanhThu2 = value;
-                OnPropertyChanged("DoanhThu2");
+                m_DiemTangTruongLoiNhuan = value;
+                OnPropertyChanged("DiemTangTruongLoiNhuan");
             }
         }
-        public double DoanhThu3
+        public double DiemChiPhiQuanLyDN
         {
-            get { return m_DoanhThu3; }
+            get { return m_DiemChiPhiQuanLyDN; }
             set
             {
-                m_DoanhThu3 = value;
-                OnPropertyChanged("DoanhThu3");
+                m_DiemChiPhiQuanLyDN = value;
+                OnPropertyChanged("DiemChiPhiQuanLyDN");
+            }
+        }
+        public double DiemChiPhiLaiVayTrenLoiNhuanGop
+        {
+            get { return m_DiemChiPhiLaiVayTrenLoiNhuanGop; }
+            set
+            {
+                m_DiemChiPhiLaiVayTrenLoiNhuanGop = value;
+                OnPropertyChanged("DiemChiPhiLaiVayTrenLoiNhuanGop");
+            }
+        }
+        public double DiemLoiNhuanGopTrenDoanhThu
+        {
+            get { return m_DiemLoiNhuanGopTrenDoanhThu; }
+            set
+            {
+                m_DiemLoiNhuanGopTrenDoanhThu = value;
+                OnPropertyChanged("DiemLoiNhuanGopTrenDoanhThu");
+            }
+        }
+        public double DiemTangTruongEPS
+        {
+            get { return m_DiemTangTruongEPS; }
+            set
+            {
+                m_DiemTangTruongEPS = value;
+                OnPropertyChanged("DiemTangTruongEPS");
+            }
+        }
+
+        public double DiemNoNganHanTrenNoDaiHan
+        {
+            get { return m_DiemNoNganHanTrenNoDaiHan; }
+            set
+            {
+                m_DiemNoNganHanTrenNoDaiHan = value;
+                OnPropertyChanged("DiemNoNganHanTrenNoDaiHan");
+            }
+        }
+
+        public double ROE
+        {
+            get { return m_ROE; }
+            set
+            {
+                m_ROE = value;
+                OnPropertyChanged("ROE");
             }
         }
         #endregion

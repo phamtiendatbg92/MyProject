@@ -57,14 +57,12 @@ namespace StockAnalysis.Views
             string s2 = "/BSheet/"; //2016/1/0/0
             string s3 = "/bao-cao-tai-chinh-cong-ty-co-phan-dich-vu-va-xay-dung-dia-oc-dat-xanh.chn";
 
-
-
             string downloadString = "";
             int length = maCks.Length;
             for (int i = 0; i < length; i++)
             {
-                int startYear = 2016;
-                int startQuy = 4;
+                int startYear = 2017;
+                int startQuy = 1;
                 int startIndex = -3;
 
                 string mack = maCks[i];

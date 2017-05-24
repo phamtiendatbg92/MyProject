@@ -35,7 +35,6 @@
                     Width="81" 
                     Click="CapNhatDBButton_Click"/>
         </StackPanel>
-
         <ProgressBar Maximum="100"
                      Height="20"
                      x:Name="progressBar"
@@ -43,5 +42,94 @@
                      Margin="20,0"
                      Grid.Row="2"
                      />
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Doanh thu bán hàng và cung cấp DV" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding DoanhThuBanHang}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Lợi nhuận sau thuế TNDN" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding LoiNhuanSauThue}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Lợi nhuận gộp" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding LoiNhuanGop}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Chi phí bán hàng" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding ChiPhiBanHang}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Chi phí quản lý doanh nghiệp" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding ChiPhiQuanLyDoanhNghiep}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Chi phí lãi vay" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding ChiPhiLaiVay}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Vốn góp của chủ sở hữu" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding VonGopCuaChuSoHuu}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Nợ ngắn hạn" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding NoNganHan}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Nợ dài hạn" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" 
+                             Text="{Binding NoDaiHan}"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>
