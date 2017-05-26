@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="9854c9b90bb64a218c56a66c8eec7165" Name="Diagram1" ZoomLevel="10">
-        <EntityTypeShape EntityType="stocksqlModel.bctc" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="stocksqlModel.congty" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="stocksqlModel.bctc" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

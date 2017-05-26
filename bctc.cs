@@ -157,5 +157,6 @@ namespace StockAnalysis
         public Nullable<long> C18_1_LoiIchCuaCoDongThieuSo { get; set; }
         public Nullable<long> C18_2_LoiNhuanSauThueCuaCtyMe { get; set; }
         public Nullable<long> C19_LaiCoBanTrenCoPhieu { get; set; }
+        public bool IsChecked { get; set; }
     }
 }

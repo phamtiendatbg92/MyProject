@@ -14,6 +14,8 @@
             <RowDefinition Height="50"/>
             <!--Progress bar-->
             <RowDefinition Height="50"/>
+            <!--Load thông tin báo cáo-->
+            <RowDefinition Height="50"/>
             <!--Main grid-->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -34,6 +36,10 @@
                     VerticalAlignment="Center" 
                     Width="81" 
                     Click="CapNhatDBButton_Click"/>
+            <Button Content="Kiểm tra dữ liệu DB"
+                    x:Name="checkDB"
+                    Width="100"
+                    Click="checkDB_Click"/>
         </StackPanel>
         <ProgressBar Maximum="100"
                      Height="20"
@@ -42,7 +48,29 @@
                      Margin="20,0"
                      Grid.Row="2"
                      />
-        <Grid Grid.Row="3">
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Label Content="Mã chứng khoán: " VerticalContentAlignment="Center"/>
+            <ComboBox ItemsSource="{Binding MaCks}"
+                      x:Name="cbMaCK"
+                      Width="100"
+                      SelectionChanged="maCK_SelectionChanged"
+                      SelectedIndex="0"/>
+            <Label Content="Năm: " VerticalContentAlignment="Center"/>
+            <ComboBox ItemsSource="{Binding Nam}"
+                      Width="100"
+                      x:Name="cbNam"
+                      SelectedIndex="0"/>
+            <Label Content="Quý: " VerticalContentAlignment="Center"/>
+            <ComboBox ItemsSource="{Binding Quy}"
+                      Width="100"
+                      x:Name="cbQuy"
+                      SelectedIndex="0"/>
+            <Button Content="Load Data" 
+                    Width="100"
+                    Margin="20,0,0,0"
+                    Click="Button_Click_1"/>
+        </StackPanel>
+        <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -55,7 +83,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Doanh thu bán hàng và cung cấp DV" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding DoanhThuBanHang}"/>
+                             x:Name="doanhThuBanHang"
+                             Text="{Binding doanhThuBanHang,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -64,7 +93,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Lợi nhuận sau thuế TNDN" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding LoiNhuanSauThue}"/>
+                             x:Name="LoiNhuanSauThue"
+                             Text="{Binding LoiNhuanSauThue,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -73,7 +103,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Lợi nhuận gộp" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding LoiNhuanGop}"/>
+                             x:Name="LoiNhuanGop"
+                             Text="{Binding LoiNhuanGop,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -82,7 +113,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Chi phí bán hàng" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding ChiPhiBanHang}"/>
+                             x:Name="ChiPhiBanHang"
+                             Text="{Binding ChiPhiBanHang,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -91,7 +123,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Chi phí quản lý doanh nghiệp" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding ChiPhiQuanLyDoanhNghiep}"/>
+                             x:Name="ChiPhiQuanLyDoanhNghiep"
+                             Text="{Binding ChiPhiQuanLyDoanhNghiep,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -100,7 +133,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Chi phí lãi vay" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding ChiPhiLaiVay}"/>
+                             x:Name="ChiPhiLaiVay"
+                             Text="{Binding ChiPhiLaiVay,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -109,7 +143,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Vốn góp của chủ sở hữu" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding VonGopCuaChuSoHuu}"/>
+                             x:Name="VonGopCuaChuSoHuu"
+                             Text="{Binding VonGopCuaChuSoHuu,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -118,7 +153,8 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Nợ ngắn hạn" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding NoNganHan}"/>
+                             x:Name="NoNganHan"
+                             Text="{Binding NoNganHan,StringFormat='#,#'}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -127,8 +163,12 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Nợ dài hạn" Grid.Column="0"/>
                     <TextBox Grid.Column="1" 
-                             Text="{Binding NoDaiHan}"/>
+                             x:Name="NoDaiHan"
+                             Text="{Binding NoDaiHan,StringFormat='#,#'}"/>
                 </Grid>
+                <Button Content="Update" 
+                        x:Name="updateBaoCaoBtn"
+                        Click="updateBaoCaoBtn_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

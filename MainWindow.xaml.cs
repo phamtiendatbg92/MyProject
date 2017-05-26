@@ -31,7 +31,7 @@ namespace StockAnalysis
             Constants.NAM_HIEN_TAI = 2016;
             InitializeComponent();
             scoreView.DataContext = new ScoreViewModel();
-            
+            dbOperView.SetDataContext(new DbOperViewModel());
         }
         private void ShowScore_Button_Click(object sender, RoutedEventArgs e)
         {

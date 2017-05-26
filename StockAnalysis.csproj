@@ -69,6 +69,7 @@
     <Compile Include="bctc.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CheckBaoCao\CheckByVietStock.cs" />
     <Compile Include="congty.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
@@ -89,7 +90,9 @@
     </Compile>
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DatabaseUtility.cs" />
+    <Compile Include="Utility\NetworkUtility.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\DbOperViewModel.cs" />
     <Compile Include="ViewModel\ScoreItemViewModel.cs" />
     <Compile Include="ViewModel\ScoreViewModel.cs" />
     <Compile Include="Views\DbOperView.xaml.cs">
@@ -172,8 +175,8 @@
     </Content>
     <Content Include="DataBaseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataBaseModel.edmx</DependentUpon>
       <LastGenOutput>DataBaseModel.cs</LastGenOutput>
+      <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

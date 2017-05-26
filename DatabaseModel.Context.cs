@@ -25,7 +25,7 @@ namespace StockAnalysis
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<bctc> bctcs { get; set; }
         public DbSet<congty> congties { get; set; }
+        public DbSet<bctc> bctcs { get; set; }
     }
 }
