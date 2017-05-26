@@ -27,8 +27,8 @@ namespace StockAnalysis
         private DbOperView dbOperView = new DbOperView();
         public MainWindow()
         {
-            Constants.QUY_HIEN_TAI = 4;
-            Constants.NAM_HIEN_TAI = 2016;
+            Constants.QUY_HIEN_TAI = 1;
+            Constants.NAM_HIEN_TAI = 2017;
             InitializeComponent();
             scoreView.DataContext = new ScoreViewModel();
             dbOperView.SetDataContext(new DbOperViewModel());

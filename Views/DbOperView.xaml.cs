@@ -55,7 +55,7 @@ namespace StockAnalysis.Views
         {
             BackgroundWorker bw = sender as BackgroundWorker;
             string folderName = Directory.GetCurrentDirectory();
-            folderName += "\\CanDoiKeToan\\";
+            folderName += "\\KetQuaKD\\";
             if (!Directory.Exists(folderName))
             {
                 Directory.CreateDirectory(folderName);
@@ -63,7 +63,7 @@ namespace StockAnalysis.Views
             string maCkString = File.ReadAllText("MaCK.txt");
             string[] maCks = maCkString.Split('_');
             string s1 = "http://s.cafef.vn/bao-cao-tai-chinh/";
-            string s2 = "/BSheet/"; //2016/1/0/0
+            string s2 = "/IncSta/"; //2016/1/0/0  BSheet
             string s3 = "/bao-cao-tai-chinh-cong-ty-co-phan-dich-vu-va-xay-dung-dia-oc-dat-xanh.chn";
 
             string downloadString = "";
@@ -95,6 +95,8 @@ namespace StockAnalysis.Views
                         }
                     }
                 }
+                string name = folderName + mack + ".txt";
+                File.WriteAllText(name, downloadString);
                 bw.ReportProgress(i * 100 / length);
             }
         }
@@ -114,16 +116,12 @@ namespace StockAnalysis.Views
             for (int i = 0; i < maCks.Length; i++)
             {
                 bctc baoCao = InitBaoCao(maCks[i]);
-                int temp = 2016;
-                for (int j = 0; j < 3; j++)
-                {
-                    string fileName = maCks[i] + temp.ToString();
-                    string contentCanDoiKT = File.ReadAllText(folderCanDoiKeToan + fileName + ".txt");
-                    string contentKetQuaHDKD = File.ReadAllText(folderKetQuaHDKD + fileName + ".txt");
-                    ReadCanDoiKeToan(contentCanDoiKT, baoCao, temp);
-                    ReadCanDoiKeToan(contentKetQuaHDKD, baoCao, temp);
-                    temp--;
-                }
+
+                string fileName = maCks[i];
+                string contentCanDoiKT = File.ReadAllText(folderCanDoiKeToan + fileName + ".txt");
+                string contentKetQuaHDKD = File.ReadAllText(folderKetQuaHDKD + fileName + ".txt");
+                ReadCanDoiKeToan(contentCanDoiKT, baoCao);
+                ReadCanDoiKeToan(contentKetQuaHDKD, baoCao);
                 entities.bctcs.Add(baoCao);
                 entities.SaveChanges();
                 bw.ReportProgress(i * 100 / maCks.Length);
@@ -149,7 +147,7 @@ namespace StockAnalysis.Views
             baoCao.Nam = nam;
             return baoCao;
         }
-        private void ReadCanDoiKeToan(string htmlContent, bctc baocao, int year)
+        private void ReadCanDoiKeToan(string htmlContent, bctc baocao)
         {
             //int index = 4 * (year - 2014);
             //bctc baocao1 = listBaoCao[index];
