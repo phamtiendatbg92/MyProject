@@ -1,0 +1,264 @@
+﻿<table cellspacing='0' cellpadding='0' border='0' class='BR_tbl' id='BR_tbl'>
+  <thead class='BR_thead' id='idBR_thead'>
+    <tr class='BR_rowHeader' id='BR_rowHeader'>
+      <td class='BR_colHeader_left'>
+        <span style='padding-left: 5px;'></span>
+      </td>
+      <td class='BR_colHeader_Chart'>&nbsp;</td>
+      <td class='BR_colHeader_Time'>
+        Quý 2/2016<span style='font-weight: normal;'>CKT/HN</span
+      </td>
+      <td class='BR_colHeader_Time'>
+        Quý 3/2016<span style='font-weight: normal;'>CKT/HN</span
+      </td>
+      <td class='BR_colHeader_Time'>
+        Quý 4/2016<span style='font-weight: normal;'>CKT/HN</span
+      </td>
+      <td class='BR_colHeader_Time'>
+        Quý 1/2017<span style='font-weight: normal;'>CKT/HN</span
+      </td>
+    </tr>
+  </thead>
+  <tbody class='BR_tBody' id='BR_tBody' style='display: table-row-group;'>
+    <tr id='2206' class='2216 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>1. Doanh thu bán hàng và cung cấp dịch vụ </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>517208.00,536307.00,667687.00,733501.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>517,208</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>536,307</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>667,687</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>733,501</td>
+    </tr>
+    <tr id='2218' class='2216 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>2. Các khoản giảm trừ doanh thu</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>113.00,720.00,152.00,4766.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>113</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>720</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>152</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,766</td>
+    </tr>
+    <tr id='2216' class='2217 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>3. Doanh thu thuần về bán hàng và cung cấp dịch vụ</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>517095.00,535587.00,667535.00,728735.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>517,095</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>535,587</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>667,535</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>728,735</td>
+    </tr>
+    <tr id='2207' class='2217 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>4. Giá vốn hàng bán </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>447802.00,452795.00,568749.00,626990.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>447,802</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>452,795</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>568,749</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>626,990</td>
+    </tr>
+    <tr id='2217' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>69293.00,82792.00,98786.00,101745.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>69,293</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>82,792</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>98,786</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>101,745</td>
+    </tr>
+    <tr id='2221' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>6.Doanh thu hoạt động tài chính </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>11943.00,4802.00,9364.00,82365.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>11,943</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,802</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>9,364</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>82,365</td>
+    </tr>
+    <tr id='2222' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>7. Chi phí tài chính </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>9271.00,8644.00,26459.00,53245.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>9,271</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>8,644</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>26,459</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>53,245</td>
+    </tr>
+    <tr id='2223' class='2223 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalI Padding1'>   Trong đó :Chi phí lãi vay</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>7088.00,6637.00,7266.00,16834.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalI' align='right'>7,088</td>
+      <td class='BR_tBody_colValue_mVND NormalI' align='right'>6,637</td>
+      <td class='BR_tBody_colValue_mVND NormalI' align='right'>7,266</td>
+      <td class='BR_tBody_colValue_mVND NormalI' align='right'>16,834</td>
+    </tr>
+    <tr id='5321' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>8. Phần lãi/lỗ trong công ty liên doanh, liên kết</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>-4295.00,2294.00,1328.00,_</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>(4,295)</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>2,294</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>1,328</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+    </tr>
+    <tr id='2227' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>9. Chi phí bán hàng </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>12901.00,19223.00,14528.00,22944.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>12,901</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>19,223</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>14,528</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>22,944</td>
+    </tr>
+    <tr id='2224' class='2208 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>10. Chi phí quản lý doanh nghiệp </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>16734.00,18668.00,15598.00,18419.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>16,734</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>18,668</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>15,598</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>18,419</td>
+    </tr>
+    <tr id='2208' class='2211 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>11. Lợi nhuận thuần từ hoạt động kinh doanh</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>38035.00,43355.00,52894.00,89501.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>38,035</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>43,355</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>52,894</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>89,501</td>
+    </tr>
+    <tr id='2225' class='2209 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>12. Thu nhập khác </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>679.00,4189.00,1114.00,139.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>679</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,189</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>1,114</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>139</td>
+    </tr>
+    <tr id='2226' class='2209 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>13. Chi phí khác </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>9.00,14.00,5671.00,27.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>9</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>14</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>5,671</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>27</td>
+    </tr>
+    <tr id='2209' class='2211 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>14. Lợi nhuận khác</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>670.00,4176.00,-4557.00,112.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>670</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>4,176</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>(4,557)</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>112</td>
+    </tr>
+    <tr id='2210' class='2211 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>Phần lợi nhuận/lỗ từ công ty liên kết liên doanh</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
+    </tr>
+    <tr id='2211' class='2212 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>15. Tổng lợi nhuận kế toán trước thuế</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>38705.00,47531.00,48337.00,89613.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>38,705</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>47,531</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>48,337</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>89,613</td>
+    </tr>
+    <tr id='2219' class='2212 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>16. Chi phí thuế TNDN hiện hành</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>4795.00,8319.00,6891.00,17973.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,795</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>8,319</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>6,891</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>17,973</td>
+    </tr>
+    <tr id='2220' class='2212 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>17. Chi phí thuế TNDN hoãn lại </td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>23.00,82.00,-2.00,-201.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>23</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>82</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>(2)</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>(201)</td>
+    </tr>
+    <tr id='2212' class='2214 BR_tBody_rowName'>
+      <td class='BR_tBody_colName NormalB Padding1'>18. Lợi nhuận sau thuế thu nhập doanh nghiệp</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>33887.00,39130.00,41449.00,71841.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>33,887</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>39,130</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>41,449</td>
+      <td class='BR_tBody_colValue_mVND NormalB' align='right'>71,841</td>
+    </tr>
+    <tr id='2213' class='2214 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>Lợi ích của cổ đông thiểu số</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>229.00,456.00,154.00,4946.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>229</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>456</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>154</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,946</td>
+    </tr>
+    <tr id='2214' class='2214 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>Lợi nhuận sau thuế của cổ đông của Công ty mẹ</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>33659.00,38674.00,41295.00,66895.00</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>33,659</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>38,674</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>41,295</td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'>66,895</td>
+    </tr>
+    <tr id='2215' class='2215 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>19. Lãi cơ bản trên cổ phiếu (*) (VNÐ)</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+    </tr>
+    <tr id='5316' class='5316 BR_tBody_rowName'>
+      <td class='BR_tBody_colName Normal Padding1'>20. Lãi suy giảm trên cổ phiếu (*)</td>
+      <td class='FR_tBody_colUnit'>
+        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
+      </td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
+    </tr>
+</table>
+<div id='Tc_TotalRow' style='display:none;'>29</div>

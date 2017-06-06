@@ -120,8 +120,8 @@ namespace StockAnalysis.Views
                 string fileName = maCks[i];
                 string contentCanDoiKT = File.ReadAllText(folderCanDoiKeToan + fileName + ".txt");
                 string contentKetQuaHDKD = File.ReadAllText(folderKetQuaHDKD + fileName + ".txt");
-                ReadCanDoiKeToan(contentCanDoiKT, baoCao);
-                ReadCanDoiKeToan(contentKetQuaHDKD, baoCao);
+                ReadBaoCaoTaiChinh(contentCanDoiKT, baoCao);
+                ReadBaoCaoTaiChinh(contentKetQuaHDKD, baoCao);
                 entities.bctcs.Add(baoCao);
                 entities.SaveChanges();
                 bw.ReportProgress(i * 100 / maCks.Length);
@@ -147,7 +147,7 @@ namespace StockAnalysis.Views
             baoCao.Nam = nam;
             return baoCao;
         }
-        private void ReadCanDoiKeToan(string htmlContent, bctc baocao)
+        private void ReadBaoCaoTaiChinh(string htmlContent, bctc baocao)
         {
             //int index = 4 * (year - 2014);
             //bctc baocao1 = listBaoCao[index];
@@ -1274,10 +1274,12 @@ namespace StockAnalysis.Views
             }
         }
 
+        
         private void checkDB_Click(object sender, RoutedEventArgs e)
         {
-            CheckByVietStock checkByVietStock = new CheckByVietStock();
-
+            CompareData compareData = new CompareData();
+            compareData.DoCompare();
         }
+
     }
 }

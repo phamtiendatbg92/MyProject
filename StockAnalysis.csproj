@@ -88,6 +88,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Utility\CompareData.cs" />
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DatabaseUtility.cs" />
     <Compile Include="Utility\NetworkUtility.cs" />
@@ -178,6 +179,10 @@
       <LastGenOutput>DataBaseModel.cs</LastGenOutput>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Content>
+    <Resource Include="DataVietStock\CDKT.xml" />
+    <Resource Include="DataVietStock\KQKD.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

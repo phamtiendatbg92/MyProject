@@ -38,7 +38,8 @@
                     Click="CapNhatDBButton_Click"/>
             <Button Content="Kiểm tra dữ liệu DB"
                     x:Name="checkDB"
-                    Width="100"
+                    VerticalAlignment="Center"
+                    Width="120"
                     Click="checkDB_Click"/>
         </StackPanel>
         <ProgressBar Maximum="100"
