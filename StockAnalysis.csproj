@@ -180,7 +180,9 @@
       <LastGenOutput>DataBaseModel.cs</LastGenOutput>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Content>
-    <Resource Include="DataVietStock\CDKT.xml" />
+    <Resource Include="DataVietStock\CDKT.xml">
+      <SubType>Designer</SubType>
+    </Resource>
     <Resource Include="DataVietStock\KQKD.xml">
       <SubType>Designer</SubType>
     </Resource>

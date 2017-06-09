@@ -18,7 +18,7 @@ namespace StockAnalysis.Utility
         public const string ChiPhiQuanLyDoanhNghiep = "ChiPhiQuanLyDoanhNghiep";
         public const string ChiPhiLaiVay = "ChiPhiLaiVay";
         public const string VonGopCuaChuSoHuu = "VonGopCuaChuSoHuu";
-        public const string NoGanHan = "NoGanHan";
+        public const string NoNganHan = "NoGanHan";
         public const string NoDaiHan = "NoDaiHan";
     }
 }

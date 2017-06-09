@@ -135,6 +135,55 @@ namespace StockAnalysis.Utility
                                 data[i].Append(Fields.DoanhThuBanHangVaCungCapDichVu + "_" + listValues[i] + ";");
                             }
                             break;
+                        case "2212":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.LoiNhuanSauThue + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "2217":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.LoiNhuanGop + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "2227":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.ChiPhiBanHang + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "2223":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.ChiPhiLaiVay + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "3063":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.VonGopCuaChuSoHuu + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "3014":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.NoNganHan + "_" + listValues[i] + ";");
+                            }
+                            break;
+                        case "3017":
+                            listValues = ExtractVietStockXmlData(node);
+                            for (int i = 0; i < 4; i++)
+                            {
+                                data[i].Append(Fields.NoDaiHan + "_" + listValues[i] + ";");
+                            }
+                            break;
                             #endregion
                     }
                 }
