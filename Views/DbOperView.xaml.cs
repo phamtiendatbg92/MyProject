@@ -1278,8 +1278,13 @@ namespace StockAnalysis.Views
         private void checkDB_Click(object sender, RoutedEventArgs e)
         {
             CompareData compareData = new CompareData();
-            compareData.DoCompare();
+            compareData.DoCompare(false);
         }
 
+        private void getVndirectData_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+        }
     }
 }

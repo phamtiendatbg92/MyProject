@@ -76,7 +76,7 @@ namespace StockAnalysis.Utility
             CheckByVietStock checkByVietStock = new CheckByVietStock();
             // giá trị 1 bắt đầu từ quý 1 năm 2017 (Mới nhất)
 
-            string[] maCks = GetAllMack();
+            string[] maCks = FileUtility.ReadAllMack();
             int length = maCks.Length;
 
             for (int i = 0; i < length; i++)
@@ -89,12 +89,6 @@ namespace StockAnalysis.Utility
             }
         }
 
-        private string[] GetAllMack()
-        {
-            string maCkString = File.ReadAllText("MaCK.txt");
-            string[] maCks = maCkString.Split('_');
-            return maCks;
-        }
 
         private StringBuilder BctcVietStock;
         private void ReadHtmlContentOfVietStock(string htmlContent, int pageNo, string mack)

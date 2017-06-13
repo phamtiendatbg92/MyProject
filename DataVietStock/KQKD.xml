@@ -1,264 +1,331 @@
-﻿<table cellspacing='0' cellpadding='0' border='0' class='BR_tbl' id='BR_tbl'>
-  <thead class='BR_thead' id='idBR_thead'>
-    <tr class='BR_rowHeader' id='BR_rowHeader'>
-      <td class='BR_colHeader_left'>
-        <span style='padding-left: 5px;'></span>
-      </td>
-      <td class='BR_colHeader_Chart'>&nbsp;</td>
-      <td class='BR_colHeader_Time'>
-        Quý 2/2016<span style='font-weight: normal;'>CKT/HN</span
-      </td>
-      <td class='BR_colHeader_Time'>
-        Quý 3/2016<span style='font-weight: normal;'>CKT/HN</span
-      </td>
-      <td class='BR_colHeader_Time'>
-        Quý 4/2016<span style='font-weight: normal;'>CKT/HN</span
-      </td>
-      <td class='BR_colHeader_Time'>
-        Quý 1/2017<span style='font-weight: normal;'>CKT/HN</span
-      </td>
-    </tr>
-  </thead>
-  <tbody class='BR_tBody' id='BR_tBody' style='display: table-row-group;'>
-    <tr id='2206' class='2216 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>1. Doanh thu bán hàng và cung cấp dịch vụ </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>517208.00,536307.00,667687.00,733501.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>517,208</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>536,307</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>667,687</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>733,501</td>
-    </tr>
-    <tr id='2218' class='2216 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>2. Các khoản giảm trừ doanh thu</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>113.00,720.00,152.00,4766.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>113</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>720</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>152</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,766</td>
-    </tr>
-    <tr id='2216' class='2217 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>3. Doanh thu thuần về bán hàng và cung cấp dịch vụ</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>517095.00,535587.00,667535.00,728735.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>517,095</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>535,587</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>667,535</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>728,735</td>
-    </tr>
-    <tr id='2207' class='2217 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>4. Giá vốn hàng bán </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>447802.00,452795.00,568749.00,626990.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>447,802</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>452,795</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>568,749</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>626,990</td>
-    </tr>
-    <tr id='2217' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>69293.00,82792.00,98786.00,101745.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>69,293</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>82,792</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>98,786</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>101,745</td>
-    </tr>
-    <tr id='2221' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>6.Doanh thu hoạt động tài chính </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>11943.00,4802.00,9364.00,82365.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>11,943</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,802</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>9,364</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>82,365</td>
-    </tr>
-    <tr id='2222' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>7. Chi phí tài chính </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>9271.00,8644.00,26459.00,53245.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>9,271</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>8,644</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>26,459</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>53,245</td>
-    </tr>
-    <tr id='2223' class='2223 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalI Padding1'>   Trong đó :Chi phí lãi vay</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>7088.00,6637.00,7266.00,16834.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalI' align='right'>7,088</td>
-      <td class='BR_tBody_colValue_mVND NormalI' align='right'>6,637</td>
-      <td class='BR_tBody_colValue_mVND NormalI' align='right'>7,266</td>
-      <td class='BR_tBody_colValue_mVND NormalI' align='right'>16,834</td>
-    </tr>
-    <tr id='5321' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>8. Phần lãi/lỗ trong công ty liên doanh, liên kết</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>-4295.00,2294.00,1328.00,_</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>(4,295)</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>2,294</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>1,328</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-    </tr>
-    <tr id='2227' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>9. Chi phí bán hàng </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>12901.00,19223.00,14528.00,22944.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>12,901</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>19,223</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>14,528</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>22,944</td>
-    </tr>
-    <tr id='2224' class='2208 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>10. Chi phí quản lý doanh nghiệp </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>16734.00,18668.00,15598.00,18419.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>16,734</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>18,668</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>15,598</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>18,419</td>
-    </tr>
-    <tr id='2208' class='2211 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>11. Lợi nhuận thuần từ hoạt động kinh doanh</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>38035.00,43355.00,52894.00,89501.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>38,035</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>43,355</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>52,894</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>89,501</td>
-    </tr>
-    <tr id='2225' class='2209 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>12. Thu nhập khác </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>679.00,4189.00,1114.00,139.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>679</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,189</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>1,114</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>139</td>
-    </tr>
-    <tr id='2226' class='2209 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>13. Chi phí khác </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>9.00,14.00,5671.00,27.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>9</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>14</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>5,671</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>27</td>
-    </tr>
-    <tr id='2209' class='2211 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>14. Lợi nhuận khác</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>670.00,4176.00,-4557.00,112.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>670</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>4,176</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>(4,557)</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>112</td>
-    </tr>
-    <tr id='2210' class='2211 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>Phần lợi nhuận/lỗ từ công ty liên kết liên doanh</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'></td>
-    </tr>
-    <tr id='2211' class='2212 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>15. Tổng lợi nhuận kế toán trước thuế</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>38705.00,47531.00,48337.00,89613.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>38,705</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>47,531</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>48,337</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>89,613</td>
-    </tr>
-    <tr id='2219' class='2212 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>16. Chi phí thuế TNDN hiện hành</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>4795.00,8319.00,6891.00,17973.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,795</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>8,319</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>6,891</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>17,973</td>
-    </tr>
-    <tr id='2220' class='2212 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>17. Chi phí thuế TNDN hoãn lại </td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>23.00,82.00,-2.00,-201.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>23</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>82</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>(2)</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>(201)</td>
-    </tr>
-    <tr id='2212' class='2214 BR_tBody_rowName'>
-      <td class='BR_tBody_colName NormalB Padding1'>18. Lợi nhuận sau thuế thu nhập doanh nghiệp</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>33887.00,39130.00,41449.00,71841.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>33,887</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>39,130</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>41,449</td>
-      <td class='BR_tBody_colValue_mVND NormalB' align='right'>71,841</td>
-    </tr>
-    <tr id='2213' class='2214 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>Lợi ích của cổ đông thiểu số</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>229.00,456.00,154.00,4946.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>229</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>456</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>154</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>4,946</td>
-    </tr>
-    <tr id='2214' class='2214 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>Lợi nhuận sau thuế của cổ đông của Công ty mẹ</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>33659.00,38674.00,41295.00,66895.00</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>33,659</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>38,674</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>41,295</td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'>66,895</td>
-    </tr>
-    <tr id='2215' class='2215 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>19. Lãi cơ bản trên cổ phiếu (*) (VNÐ)</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-    </tr>
-    <tr id='5316' class='5316 BR_tBody_rowName'>
-      <td class='BR_tBody_colName Normal Padding1'>20. Lãi suy giảm trên cổ phiếu (*)</td>
-      <td class='FR_tBody_colUnit'>
-        <span style='display:none;' class='rpt_chart'>_,_,_,_</span>
-      </td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-      <td class='BR_tBody_colValue_mVND Normal' align='right'></td>
-    </tr>
-</table>
-<div id='Tc_TotalRow' style='display:none;'>29</div>
+﻿" \n\n\n\n\n\n\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"vi\" xml:lang=\"vi\">
+  \n\t<head>
+    \n\t\t<title>Tìm kiếm mã cổ phiếu - Thông tin cổ phiếu</title>\n\t\t<!-- RUh9E1AYq82sZYLPXEj4PXjlH9c -->\n\t\t<meta name=\"alexaVerifyID\" content=\"RUh9E1AYq82sZYLPXEj4PXjlH9c\" />\n\t\t<meta name=\"description\" content=\"Tìm kiếm mã cổ phiếu\" />\n\t\t<meta name=\"keywords\" content=\"tim kiem ma co phieu, thong tin co phieu\" />\n\t\t<meta http-equiv=\"Page-Exit\"\n\t\t\tcontent=\"progid:DXImageTransform.Microsoft.Fade(duration=.3)\" />\n\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\t\t<meta http-equiv=\"pragma\" content=\"no-cache\" />\n\t\t<meta http-equiv=\"cache-control\" content=\"no-cache\" />\n\t\t<meta http-equiv=\"expires\" content=\"0\" />\n\t\t\n\t\t<link rel=\"icon\" href=\"/portal/favicon.png\"\n\t\t\ttype=\"image/x-icon\" />\n\t\t<link rel=\"shortcut icon\" href=\"/portal/favicon.png\"\n\t\t\ttype=\"image/x-icon\" />\n\t\t\t\n\t\t\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/stylesheet.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/notification.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/style.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/style_newGUI.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/style_.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/jquery.validation/default.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/jquery.autocomplete/default.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/ui-dialog.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/ui-datepicker.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/ui-mostActive.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/jquery.tooltip.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/flexpaper/flexpaper.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/simplePagination.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"/portal/css/ng-grid.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?time=20170531014434\" type=\"text/css\" media=\"screen\" />\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t<!--[if gte IE 6]>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/portal/css/iespecific.css;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" />\n\t\t<![endif]-->\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n\n\n\n\n\n<script type=\"text/javascript\">
+      \n\n/**\n* keep Context of web application\n*/\nvar WEB_CONTEXT = '/portal/';\nvar TRADE_CONTEXT = '/trade';\nvar WEB_CONTEXT_RESOURCE = 'https://www.vndirect.com.vn/vndirect-resource/';\nvar WEB_VNDIRECT_RESOURCE = 'https://www.vndirect.com.vn/vndirect-resource/';\nvar WEB_CONTEXT_CHART = 'vnd_b84955d639a0b8287ad24f1229920024_';\nvar TRADING_STRATEGY_SERVICE_ROOT = 'https://cpkn-api.vndirect.com.vn/';\nvar TRADING_STRATEGY_SERVICE_FALLBACK_ROOT = 'https://www.vndirect.com.vn/cpkn-api/';\nvar IS_CROSS_DOMAIN = true;\nvar ACCESS_TOKEN_COOKIE_DOMAIN = '.vndirect.com.vn';\n\nvar BROWSER_SUPPORT_IGNORED = 'browser-support-ignored';\nvar LOGIN_V2_URL = 'https://www.vndirect.com.vn/signin';\n\n\n// parameter for paging-info\nvar PAGING_FIRST = 'Trang đầu';\nvar PAGING_BACK = 'Quay lại';\nvar PAGING_NEXT = 'Xem tiếp';\nvar PAGING_LAST = 'Trang cuối';\nvar PAGING_OTHER_COMPANY = 'Công ty khác';\n\n// parameter for multi-language\nvar LANGUAGES = {VN : 'Tiếng Việt', en_GB : 'Tiếng Anh', jp : 'Tiếng Nhật'};\n\n//Resource\nvar AJAX_IMAGE_LOADING = '/portal/images/ajax-loader.gif';\n\n//Common\nvar SYMBOLPROCESSINGACTION_NOT_FOUND = 'Không tìm thấy bản ghi nào !';\nvar VNDIRECT_CORNER = 'GÓC NHÌN VNDIRECT';\n\n// Vote\nvar SELECT_ONE_ANSWER = 'Hãy chọn 1 đáp án';\nvar ITEM_VOTE = '&nbsp;phiếu';\n\n//Messages for symbol search\nvar MESSAGE_SYMBOL_SEARCH = 'In put symbol';\n\n//using newsinfo.clazz.NewsOnlineHome.js\nvar MARKET_NEWS_COL1 = 'web.label.HomePageAction.form.home.annalysis.tablecol1';\nvar MARKET_NEWS_COL2 = 'web.label.HomePageAction.form.home.annalysis.tablecol2';\nvar MARKET_NEWS_COL3 = 'web.label.HomePageAction.form.home.annalysis.tablecol3';\n\n//using newsinfo.clazz.MarketOverviewHome.js\nvar WORLD_INDEX_COL1 = 'Value';\nvar WORLD_INDEX_COL2 = 'Change';\nvar WORLD_INDEX_COL3 = 'Change %';\n\n//using\nvar SECTOR_TEXT = 'Nhập mã chứng khoán';\nvar CK_SEARCH_TEXTBOX = 'Nhập mã chứng khoán';\nvar LATEST_MARKET_NEWS_SUBTITLE = 'web.label.HomePageAction.form.home.marketsummarize.subtitle';\n\n//Listed Market\nvar COMMON_NOT_FOUND = 'Không tìm thấy bản ghi nào !';\nvar FOR_SYMBOL_FROMNEWSDATE_FIELD_INVALID = 'web.label.NewsForSymbolAction.form.Messages.FromNewsDateFieldInvalid';\nvar FOR_SYMBOL_TONEWSDATE_FIELD_INVALID = 'web.label.NewsForSymbolAction.form.Messages.ToNewsDateFieldInvalid';\nvar FOR_EVENT_FROMNEWSDATE_FIELD_INVALID = 'web.label.CompanyEventsAction.form.Messages.FromNewsDateFieldInvalid';\nvar FOR_EVENT_TONEWSDATE_FIELD_INVALID = 'web.label.CompanyEventsAction.form.Messages.ToNewsDateFieldInvalid';\nvar resultTransactions = 'web.label.ListedMarketAction.form.mostactive.resultTransactions';\nvar HTML_SQ_URL = \"http://www3.vndirect.com.vn/directboard\";\nvar JAVA_SQ_URL = \"http://directboard1.vndirect.com.vn\";\n//News Info\nvar RESULTBYKEYWORD_MESSAGE = '&nbsp;&nbsp;web.label.SearchNewsAction.form.Messages.Resultbykeyword&nbsp;&nbsp;';\nvar DETAILS_TEXT = 'Chi tiết';\nvar BY = 'Người viết';\n\nvar URL_SYMBOL_AUTO_SUGGESTION = \"/portal/ajax/common/SymbolAutoSuggestionForSearch.shtml\";\nvar URL_SYMBOL_QUICK_SEARCH = \"/portal/ajax/common/SymbolProcessing_QuickSearch.shtml\";\nvar URL_SYMBOL_CHECK_EXIST = \"/portal/ajax/common/SymbolProcessing_CheckExistedSymbol.shtml\";\nvar URL_SYMBOL_SEARCH_SYMBOL = \"/portal/analysis/search-symbol.shtml\";\n\nvar URL_VOTE = '/portal/ajax/listed/GetVote.shtml';\nvar URL_SUBMIT_VOTE = '/portal/ajax/listed/SubmitVote.shtml';\nvar URL_CAPTCHA='/portal/ajax/common/CaptchaImage.shtml';\n\n// Using for Free Register Home Page\nvar URL_HOSESTOCKBOARD = '/portal/home/RedirectUrl.shtml?code=HoseStockBoard&ticket=true';\n\nvar WORLD_INDEX_URL = '/portal/ajax/home/WorldIndex.shtml';\n\n//Login\nvar URL_LOGIN = '/portal/osc/OSCAfterLogin.shtml';\n\n//Analysis Tools\nvar URL_LIST_SECTOR = \"/portal/phan-tich-nganh/chi-so-nganh.shtml\";\nvar URL_HIT = '/portal/ajax/analysis/Hit.shtml';\nvar URL_SHOW_SECTOR_DETAILS = '/portal/analysis/SectorDetails.shtml';\nvar URL_STOCK_SCREENER = '/portal/cong-cu-phan-tich-chung-khoan/sang-loc-co-phieu.shtml';\nvar URL_STOCK_SCREENER_SUMMARY = '/portal/cong-cu-phan-tich-chung-khoan/ket-qua-sang-loc-co-phieu.shtml';\nvar URL_STOCK_SCREENER_SAVING = '/portal/cong-cu-phan-tich-chung-khoan/luu-tieu-chi-sang-loc.shtml';\nvar URL_STOCK_SCREENER_DELETE = '/portal/cong-cu-phan-tich-chung-khoan/stock-screener-delete.shtml';\nvar URL_STOCK_SCREENER_HISTORY_SUMMARY = '/portal/cong-cu-phan-tich-chung-khoan/tieu-chi-sang-loc-co-phieu-da-luu.shtml';\nvar URL_STOCK_SCREENER_HISTORY = '/portal/cong-cu-phan-tich-chung-khoan/stock-screener-history.shtml';\n\nvar URL_COMPANY_SNAPSHOT = \"/portal/analysis/stock-information/company/snapshot.shtml\";\nvar URL_STOCK_INFO = \"/portal/tong-quan/\";\nvar URL_MACRO_NEWS_AJAX = '/portal/ajax/analysis/MacroNews.shtml';\nvar URL_MACRO_REPORT_NEWS_AJAX = '/portal/ajax/analysis/MacroReportNews.shtml';\nvar URL_LIST_SECTOR_AJAX = '/portal/ajax/analysis/ListSectorView.shtml';\nvar URL_LIST_INDUSTRIES_AJAX = '/portal/ajax/analysis/ListIndustryView.shtml';\nvar URL_LIST_COMPANIES_AJAX = '/portal/ajax/analysis/ListCompanyView.shtml';\nvar URL_SEARCH_BY_SYMBOL_AJAX = '/portal/ajax/analysis/ListCompanyBySymbol.shtml';\nvar URL_LIST_SECTOR_INDUSTRIES_AJAX = '/portal/ajax/analysis/ListSectorIndex.shtml';\nvar URL_STOCK_SCREENER_CALCULATE_AJAX = '/portal/ajax/analysis/StockScreenerAJAXAction_Calculate.shtml';\nvar URL_STOCK_SCREENER_GET_LIST_INDUSTRY_AJAX = '/portal/ajax/analysis/StockScreenerAJAXAction_GetListOfIndustries.shtml';\nvar URL_STOCK_SCREENER_SUMMARY_SORTING_AJAX = '/portal/ajax/analysis/StockScreenerAJAXAction_ViewSortedData.shtml';\nvar URL_STOCK_SCREENER_SUMMARY_DATA_AJAX = '/portal/ajax/analysis/StockScreenerAJAXAction_ViewSummaryData.shtml';\nvar URL_STOCK_SCREENER_LIST_AJAX = '/portal/ajax/analysis/StockScreenerAJAXAction_ViewListOfStockScreener.shtml';\n\nvar URL_MARKET_DAILY_NEWS_AJAX = '/portal/ajax/analysis/MarketDailyNews.shtml';\nvar URL_LATEST_REPORT_AJAX = '/portal/ajax/analysis/LatestReport.shtml';\nvar URL_MOST_VIEWED_REPORT_AJAX = '/portal/ajax/analysis/MostViewedReports.shtml';\nvar URL_RELATED_VIDEO_AJAX = '/portal/ajax/analysis/RelatedVideos.shtml';\nvar URL_NEWS_DETAILS = '/portal/common/NewsDetail.shtml';\nvar URL_NEWS_DETAILS_2 = '/portal/home/info/NewsDetail.shtml';\nvar URL_NEWS_DETAILS_Commentary = '/portal/analysis/NewsDetail_Commentary.shtml';\nvar URL_NEWS_DETAILS_Broker = '/portal/analysis/NewsDetail_Broker.shtml';\nvar URL_NEWS_DETAILS_Expert = '/portal/analysis/news/expert/';\nvar URL_NEWS_DETAILS_DailyReport = '/portal/analysis/NewsDetail_DailyReport.shtml';\nvar URL_NEWS_DETAILS_DailyReportNoVideo = '/portal/analysis/NewsDetail_DailyReportNoVideo.shtml';\nvar URL_NEWS_DETAILS_MacVN = '/portal/tin-trong-nuoc/';\nvar URL_NEWS_DETAILS_MacWorld = '/portal/tin-quoc-te/';\nvar URL_NEWS_DETAILS_Disclousure = '/portal/analysis/disclosure/';\nvar URL_NEWS_DETAILS_IPO = '/portal/listed/NewsDetail_IPO.shtml';\nvar URL_NEWS_DETAILS_PM = '/portal/analysis/NewsDetail_MarketReview.shtml';\nvar URL_LOAD_MORE_NEWS = \"/portal/ajax/LoadMore/News.shtml\";\nvar URL_LOAD_MORE_VIDEOS = \"/portal/ajax/LoadMore/Videos.shtml\";\n\n\nvar URL_ATTACHMENTS_DETAILS = '/portal/common/AttachmentsDetail.shtml';\n\nvar URL_INDUSTRY_DETAILS_AJAX = '/portal/ajax/analysis/IndustryDetails.shtml';\nvar URL_INDUSTRY_DETAILS = '/portal/analysis/IndustryDetails.shtml';\nvar URL_SECTOR_DETAILS_AJAX = '/portal/ajax/analysis/SectorDetails.shtml';\n\nvar URL_TOP_COMPANY_AJAX = '/portal/ajax/analysis/TopCompany.shtml';\nvar URL_TOP_INDUSTRY_AJAX = '/portal/ajax/analysis/TopIndustry.shtml';\n\nvar URL_VIEW_EXPERT_DETAIL = '/portal/analysis/ViewExpertDetail.shtml?subjectCode=';\nvar URL_VIEW_EXPERT_CONTENT = '/portal/ajax/analysis/ViewExpertContent.shtml';\n\nvar VNDIRECT_AJAX_URI = \"<vndirect:uriRewrite uri='vndirect.ajax'/>\";\n\nvar URL_TRADINGS = '/portal/listed/TradingStatistics.shtml';\nvar URL_SEARCH_CASHFLOW = '/portal/ajax/listed/SearchCashFlow.shtml';\nvar URL_SEARCH_INCOMESTATEMENT = '/portal/ajax/listed/SearchIncomeStatement.shtml';\nvar URL_HISTORICAL_PRICE_FOR_SYMBOL = '/portal/listed/historical-price.shtml';\nvar URL_MOST_ACTIVES = '/portal/ajax/listed/GetMostActiveCompany.shtml';\nvar URL_MARKET_CALENDAR = '/portal/ajax/listed/GetMarketCalendar.shtml';\nvar URL_MOST_POPULAR_SYMBOL = '/portal/ajax/listed/MostPopularSymbol.shtml';\nvar URL_SEARCH_RELATEDCOMPANYFORSNAPSHOT = '/portal/ajax/listed/SearchRelatedCompany.shtml';\n\nvar URL_SEARCH_TRADINGFOREIGNINVESTORS = '/portal/ajax/listed/TradingForeignInvestors.shtml';\nvar URL_SEARCH_FOREIGNTRADINGFORSYMBOL = '/portal/ajax/listed/foreign-trading.shtml';\nvar URL_SEARCH_HISTORICALPRICE = '/portal/ajax/listed/SearchHistoricalPrice.shtml';\nvar URL_SEARCH_HISTORICALPRICEFORSYMBOL = '/portal/ajax/listed/SearchHistoricalPriceForSymbol.shtml';\nvar URL_SEARCH_TRADINGSTATISTICS = '/portal/ajax/listed/TradingStatistics.shtml';\nvar URL_SEARCH_TRADING_FORSMBOL = '/portal/ajax/listed/TradingForSymbol.shtml';\nvar URL_DOWNLOAD_REPORT_FOR_SYMBOL = '/portal/ajax/listed/DownloadReportForSymbol.shtml';\nvar URL_DOWNLOAD_REPORT = '/portal/ajax/listed/DownloadTradingStatistics.shtml';\n\nvar URL_SEARCH_NEWS = '/portal/ajax/news/SearchNews_FindingInformation.shtml';\nvar URL_VNDIRECT_NEWS = '/portal/news/NewsOfVNDIRECT.shtml';\nvar URL_STOCK_INFORMATION = '/portal/listed/MacroNews.shtml';\n\nvar URL_NEWS = '/portal/ajax/news/News_GetNews.shtml';\nvar URL_MAC_WORLD = '/portal/ajax/news/News_GetMacWorld.shtml';\nvar URL_IPO_NEWS = '/portal/ajax/news/News_GetIPONews.shtml';\nvar URL_PUBLIC_INFO = '/portal/ajax/news/News_GetPublicInfo.shtml';\nvar URL_MARKET_NEWS = '/portal/ajax/news/News_GetMarketNews.shtml';\nvar URL_GET_OTHER_NEWS = '/portal/ajax/news/News_GetOtherNews.shtml';\nvar URL_GET_OTHER_INDAY_NEWS = '/portal/ajax/news/News_GetOtherInDayNews.shtml';\nvar URL_GET_NEWS_BY_TYPES = '/portal/ajax/news/News_GetNewsByTypes.shtml';\nvar URL_GET_MOST_VIEWED_NEWS_BY_TYPES = '/portal/ajax/news/News_GetMostViewedNewsByTypes.shtml';\n\n//Open Account\nvar URL_CREATE_FREEACCOUNTUSERS = '/portal/ajax/account/CreateFreeUsersAccount.shtml';\nvar URL_FREEREGISTEDUSERS_SUCCESS = '/portal/account/FreeUsersAccountSuccess.shtml';\nvar URL_OPEN_ACCOUNT = '/portal/mo-tai-khoan.shtml';\n//OSC\nvar URL_CHANGE_ACCOUNT_ACTION = '/portal/ajax/user/UserProfileAJAX_ChangeSelectedAccount.shtml';\nvar URL_CHANGE_USER_PROFILE = '/portal/thong-tin-co-ban.shtml';\nvar URL_VALIDATE_TRADING_PASSWORD = '/portal/ajax/user/UserProfileAJAX_ValidateTradingPassword.shtml';\nvar URL_VIEW_YOUR_REQUEST = '/portal/ajax/user/UserProfileAJAX_ViewYourRequest.shtml';\nvar URL_CHANGE_PASSWORD = '/portal/user/changePassword.shtml';\nvar URL_SHOW_QUESTION = '/portal/ajax/user/ShowQuestion.shtml';\nvar URL_SAVE_QUESTION = '/portal/ajax/user/SaveQuestion.shtml';\n\nvar URL_FLASH_CHART = '/portal/analysis/FlashChart.shtml';\n\nvar URL_FLASH_CHART_AJAX = '/portal/ajax/analysis/GetClassicChart.shtml';\nvar URL_CLASSIC_CHART_ADD_SYMBOL = '/portal/analysis/AddSymbol.shtml';\nvar URL_SEARCH_SYMBOL_AJAX = '/portal/ajax/common/SymbolProcessing_SearchSymbol.shtml';\n\n// define callback url when search for symbol\nvar FROM_MODULE;\n// company\nvar URL_PROFILE = 1;\nvar URL_KEY_STATISTIC = 2;\nvar URL_FINANCIAL_REPORT = 3;\nvar URL_FORECAST = 4;\n// ownership\nvar URL_MAJOR_HOLDER = 5;\nvar URL_INSIDE_TRANSACTION = 6;\n// chart\nvar URL_FLASH_CHART = 7;\n// news\nvar URL_COMPANY_NEWS = 8;\nvar URL_COMPANY_EVENTS = 9;\n// financial report\nvar URL_BALANCE_SHEET = 10;\nvar URL_INCOME_STATEMENT = 11;\nvar URL_CASH_FLOW = 12;\n// market statistic\nvar URL_HISTORY_PRICE = 13;\nvar URL_FOREIGN_TRADING = 14;\nvar URL_TRADING_STATISTC = 15;\n// -------\n\nvar URL_GET_DOCUMENT_PRODUCT = '/portal/ajax/home/service/ProductAJAX_GetDocumentProduct.shtml';\nvar URL_GET_PRODUCT_DETAIL = '/portal/ajax/home/service/ProductAJAX_GetProductDetail.shtml';\n\nvar URL_OSC_CONTETNT_DETAIL = '/portal/osc/viewContentDetail';\n\n// POWER RATING\nvar URL_GET_POWER_RATING_BY_LEVEL= '/portal/ajax/analysis/ViewPowerRatingLevel.shtml';\nvar URL_GET_POWER_RATING_BY_WATCHLIST= '/portal/ajax/analysis/ViewPowerRatingWatchList.shtml';\nvar URL_GET_COMPANY_POWER_RATING= '/portal/ajax/analysis/ViewCompanyPowerRating.shtml';\nvar POWER_RATING_VIEW_URL = '/portal/analysis/PowerRatingView.shtml';\nvar URL_POWER_RATING_SYMBOL_QUICK_SEARCH = '/portal/ajax/analysis/SearchSymbolPowerRating.shtml';\n//var BANG_GIA_LINK = \"https://www.vndirect.com.vn/webservices.vnd?jKey=?\";\nvar BANG_GIA_LINK = \"https://uatboard.vndirect.com.vn/webservices.vnd?jKey=?\";\n\nvar URL_SOCKET_SERVER = 'https://price-int.vndirect.com.vn/';\nvar NOTIFICATION_SERVER = 'https://websocket.vndirect.com.vn/notisocket';\nvar AUTH_URL = 'https://auth-api.vndirect.com.vn';\nvar AUTH_FALLBACK_URL = 'https://www.vndirect.com.vn/auth-api';\nvar CMS_ROOT_URL = 'http://10.25.1.185, http://10.25.1.202, http://10.25.1.220';\n//var URL_SOCKET_SERVER = \"http://123.30.240.104:80/,http://123.30.240.113:80/,http://202.160.125.23:80/,http://202.160.125.47:80/,http://202.160.125.24:80/\";\n// FLEX PAPER\nvar FLEX_PAPER_KEY = '$a6889f01f1635a39f4d';\n\n//Market key\nvar CONST_HSX_NAME = \"10\";\nvar CONST_HNX_NAME = \"02\";\nvar CONST_UPC_NAME = \"03\";\nvar CONST_VN30_NAME = \"11\";\nvar CONST_HX30_NAME = \"12\";\n\n//Indicator types\nvar B_LIGHT = 'B_LIGHT';\nvar V_TRADE = 'V_TRADE';\nvar E_BROKER = 'E_BROKER';\nvar DEFAULT_STRATEGY_MIN_VOLUME = '100000';\n\n
+    </script>\n\n\n<!--[if IE]>\n<script>\n    AUTH_URL = AUTH_FALLBACK_URL;\n    IS_CROSS_DOMAIN = false;\n</script>\n<![endif]-->\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/NumberFormat154.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/equalcolumns.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery-1.9.1.min.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery-migrate-1.2.1.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/notification/stomp.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/angular/angular.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/angular-ui-bootstrap-0.11.2.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/angular/angular-resource.min.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/angular/angular-animate.min.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/angular/ng-grid-2.0.11.min.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/jquery-ui.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.debug.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.ajaxQueue.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.autocomplete.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.bgiframe.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.form.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.validate.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.validate.additional.methods.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.simplePagination.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/UnsupportLibOnSomeBrowser.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.tables.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.pagingnav.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.errors.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.utils.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.combobox.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/web.jquery.autocomplete.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/date.format.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/i18n.jquery/messages_vn.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/i18n.jquery.ui/ui.datepicker-en.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/i18n.jquery.ui/ui.datepicker-ja.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/i18n.jquery.ui/ui.datepicker-vn.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/jquery.metadata.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/vndirect.googleanalytics.js\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t<script src=\"/portal/js/require-first-vndirect.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/vndirect.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/sockjs-0.3.min.js?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/DirectBoardAPI.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/vndirect.numberFormatUtils.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/realtime/System.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/home/topMenuAnimate.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/vndirect.quickLinks.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/home/classes/home.clazz.HomePage.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/home/home.HomePage.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/listedmarket/indexMarketFromDirectBoard.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/common/CookieManager.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/common/CrossDomain.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/common/CpknApiErrorParser.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/consultingcenter/CpknApiEndpoint.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/survey/OnlineCustomerTrackingService.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/survey/vnds.survey.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/survey/vnds.survey.constant.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"/portal/js/survey/vnds.survey.validate.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\"></script>\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/flexpaper/jquery.extensions.min.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/flexpaper/flexpaper.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/flexpaper/flexpaper_handlers.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/require.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/notification/EventManager.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\t<script src=\"https://static-01.vndirect.com.vn/js/portal/notification/WebsocketConnector.js\" type=\"text/javascript\"></script>\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t<script src=\"/portal/js/web/common/classes/common.clazz.SearchSymbol.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\t<script src=\"/portal/js/web/common/common.SearchSymbol.js;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21?time=20170531014434\" type=\"text/javascript\">\n\t\t\t</script>\n\t\t\n\t\t\n\t\t<script type=\"text/javascript\">\n\t\t  require.config({\n\t\t\t  urlArgs: \"3.4.7\"\n\t\t  });\n\t\t  var PORTAL_VERSION = '3.4.7_20170531014434';\n\t\t</script>\n
+  </head>\n\t<body>
+    \t\t\n\t\t<div id=\"web_formAways\" style=\"display: none;\"></div>\n\t\t\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\n\n<script type=\"text/javascript\">\n\tvar IS_AUTH = false;\n</script>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<script type=\"text/javascript\">\n\t\n\t$(document).ready(function() {\n\t\t$(\"#log-on-help-options-close\").click(function() {\n\t\t\t$(\"#log-on-help-options\").css('display', 'none');\n\t\t\t$(\"#fLoginPopup_btnLogin\").css('color', '#FFFFFF');\n\t\t});\n\n\t\t$(\"body\").click(function(e) {\n\t\t\tif (!$(e.target).parents('.log-on-form').length)\n\t\t\t\t$(\"#log-on-help-options\").css('display', 'none');\n\t\t});\n\t\t\n\t});\n\n\tfunction showLoginForm() {\n\t\t$(\"#log-on-help-options\").css('display', 'block');\n\t};\n\t\n\tvar isLogingOn = false;\n\t\n\tfunction doLoginPopup() {\n\t\tif(isLogingOn) {\n\t\t\treturn;\n\t\t}\n\t\tisLogingOn = true;\n\n\t\tsetCookie(\"c_redirectPageAfterLogin\", $(\"#target_id\").val(), 10000);\n\t\tvar username = $('#fLoginPopup_username').val();\n\t\tvar password = $('#fLoginPopup_password').val();\n\t\tvar redirectUrl = $(\"#target_id\").val();\n\t\tshowLoader();\n\t\t$.ajax({\n\t\t\turl : AUTH_URL + '/auth',\n\t\t\ttype : 'POST',\n\t\t\tcrossDomain: IS_CROSS_DOMAIN,\n\t\t\tdataType: 'json',\n\t\t\tdata : {\n\t\t\t\tusername : username,\n\t\t\t\tpassword : password\n\t\t\t}\n\t\t}).done(function(data) {\n\t\t\tshowLoader('Đăng nhập thành công. Vui lòng chờ...');\n\t\t\tsetAccessTokenCookies({\n\t\t\t\tname: \"accessToken\", \n\t\t\t\tvalue: data.token,\n\t\t\t\tpath: \"/\",\n\t\t\t\tdomain: ACCESS_TOKEN_COOKIE_DOMAIN, \n\t\t\t\tsecure: true\n\t\t\t});\n\t\t\t\n\t\t\twindow.location = redirectUrl;\n\t\t}).fail(function(jqXHR) {\n\t\t\tisLogingOn = false;\n\t\t\thideLoader();\n\t\t\twindow.location = LOGIN_V2_URL + '?service=' + redirectUrl;\n\t\t});\n\t\t\n\t};\n\t\n\tfunction showLoader(message) {\n\t\tif(message) {\n\t\t\t$('#loading-login .message').html(message);\n\t\t}\n\t\t\n\t\t$('#loading-login').show();\n\t};\n\t\n\tfunction hideLoader() {\n\t\t$('#loading-login .message').html('');\n\t\t$('#loading-login').hide();\n\t};\n\t\n\tfunction enterKeyPressAction(e, actionNext) {\n\t\tvar key;\n\t\tif (window.event) {\n\t\t\tkey = window.event.keyCode;\n\t\t}//IE\n\t\telse {\n\t\t\tkey = e.which;//firefox\n\t\t}\n\t\tif (key == 13) {\n\t\t\teval(actionNext);\n\t\t}\n\t}\n</script>\n<script type=\"text/javascript\">\n\tvar cookieManager = new CookieManager();\n\tvar crossDomain = new CrossDomain({\n\t\tcookieManager: cookieManager,\n\t\tcrossDomainUrl: AUTH_URL\n\t});\n\t\n\tcrossDomain.trackCrossDomain().then(function(){\n\t\t\n\t}, function(status){\n\t\tAUTH_URL = AUTH_FALLBACK_URL;\n\t\tCpknApiEndpoint.root=TRADING_STRATEGY_SERVICE_FALLBACK_ROOT;\n\t\tif(typeof(status) != 'undefined') {\n\t\t\tTRACK_CROSS_DOMAIN_CODE = status;\n\t\t\tif(window._gaq) {\n\t\t\t\twindow._gaq.push(['_trackEvent', 'CrossDomain', 'CheckCrossDomainByAjaxPostRequest', 'HttpStatusCode: ' + TRACK_CROSS_DOMAIN_CODE]);\n\t\t\t}\n\t\t}\n\t});\n</script>\n\n\t\t\n\n\n\n\n\n\n\n\n\n\n\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\" type=\"text/css\" media=\"screen\"/><link rel=\"stylesheet\" href=\"https://static-01.vndirect.com.vn/cms/css/style-api.css?45439f3a1da0d4d93328d95b49891f62\" type=\"text/css\" media=\"screen\"/>\n\n<div id='cms-header'>
+      \n    <div id=\"top-fix\">
+        \n    \t<div class=\"wrapper\">
+          \n            <div class=\"search-code\">
+            \n            \t<input type=\"text\" class=\"inputtext\" value=\"Nhập mã chứng khoán\"\n=""            \tname=\"cCode\" onfocus=\"this.value=''\" onblur=\"if( this.value.length == 0) this.value='Nhập mã chứng khoán'\">
+              \n                <a href=\"javascript:;\" onclick=\"vnd_findstock(this);\" class=\"grad-orange\">
+                <i class=\"fa fa-search\"></i>
+              </a>\n                <ul class=\"stocks-code-result\"></ul>\n
+            </div><!--end .search-code-->        \t\n            <div class=\"top-login\">
+            \n            \t<input type=\"text\" class=\"inputtext\" placeholder=\"Tên đăng nhập\" name=\"username\" onfocus=\"this\n            \t.placeholder=''\" onblur=\"this.placeholder='Tên đăng nhập'\"/>\n                <input type=\"password\" class=\"inputtext\" placeholder=\"Mật khẩu\" name=\"password\" onfocus=\"this\n                .placeholder=''\" onblur=\"this.placeholder='Mật khẩu'\"/>\n                <a href=\"javascript:;\" onclick=\"login_embed_api()\" class=\"button-api button-green-api button-signin\">Đăng nhập</a>\n                <a href=\"https://www.vndirect.com.vn/portal/quen-mat-khau.shtml\" class=\"btn-forgot-password\">Quên mật khẩu</a>\n                <a href=\"https://www.vndirect.com.vn/open-account/\" class=\"button-api button-orange button-signup\">
+              <i class=\"fa fa-unlock-alt\"></i>Mở tài khoản
+            </a>\n
+          </div><!--end .top-login-->\n\n            <div id=\"top-customer-info\">
+            \n                <a href=\"\" class=\"top-customer-name\">
+              <i class=\"fa fa-user\"></i>
+              <span></span>
+            </a>\n                <a href=\"\" class=\"top-customer-showboard\">
+              <i class=\"fa fa-caret-down\"></i>
+              <span></span>
+            </a>\n              <ul>
+              \n                <li>
+                <a href=\"https://www.vndirect.com.vn/portal/thay-doi-mat-khau.shtml\">Đổi mật khẩu</a>
+              </li>\n                <li>
+                <a href=\"https://www.vndirect.com.vn/portal/thong-tin-giao-dich.shtml\">Thông tin cá nhân</a>
+              </li>\n                <li>
+                <a href=\"javascript:;\" onclick=\"logout_embed()\" class=\"btn-logout\">Đăng xuất</a>
+              </li>\n
+            </ul>\n
+          </div>\n            \n            <ul class=\"language\">
+            \n\t<li class=\"lang-item lang-item-5 lang-item-vi current-lang\">
+              <a hreflang=\"vi\" href=\"javascript:;\"\n\tonclick=\"GetLanguage('vn')\">
+                <img\n\t src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFsSURBVHjaYvzPgAD/UNlYEUAAmuTYAAAQhAEYqF/zFbe50RZ1cMmS9TLi0pJLRjZohAMTGFUN9HdnHgEE1sDw//+Tp0ClINW/f4NI9d////3+f+b3/1+////+9f/XL6A4o6ws0AaAAGIBm/0fRTVQ2v3Pf97f/4/9Aqv+DdHA8Ps3UANAALEAMSNQNdDGP3+ALvnf8vv/t9//9X/////7f+uv/4K//iciNABNBwggsJP+/IW4kuH3n//1v/8v+wVSDURmv/57//7/CeokoKFA0wECiAnkpL9/wH4CO+DNr/+VQA1A9PN/w6//j36CVIMRxEkAAQR20m+QpSBXgU0CuSTj9/93v/8v//V/xW+48UBD/zAwAAQQSAMzOMiABoBUswCd8ev/M7A669//OX7///Lr/x+gBlCoAJ0DEEAgDUy//zBISoKNAfoepJNRFmQkyJecfxj4/kDCEIiAigECiPErakTiiWMIAAgwAB4ZUlqMMhQQAAAAAElFTkSuQmCC\" title=\"Tiếng Việt\" alt=\"Tiếng Việt\">
+              </a>
+            </li>\n\t<li class=\"lang-item lang-item-9 lang-item-en\">
+              <a hreflang=\"en\"  href=\"javascript:;\"\n\tonclick=\"GetLanguage('en_GB')\">
+                <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC\" title=\"English\" alt=\"English\">
+              </a>
+            </li>\n\t<li class=\"lang-item lang-item-246 lang-item-ja\">
+              <a hreflang=\"ja\" href=\"javascript:;\"\n\tonclick=\"GetLanguage('ja')\">
+                <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69SsDEvj37x+ERGbAwZ9//wACiAUoysXFBST///8P0QOm//+HU0jgxYsXAAHEAlP0H8HYt+//4SP/f//6b2b238sLrpqRkRFoCUAAsaCrXrv2/8KF///8+f/r9//Dh/8/ffI/OQWiAeJCgABigrseJPT27f/Vq////v3/1y8oWrzk/+PHcEv+/PkDEEBMEM/B3fj/40eo0t9g8suX/w8f/odZAVQMEEAsQAzj/2cQFf3PxARWCrYEaBXQLCkpqB/+/wcqBgggJrjxQPX/hYX/+/v///kLqhpIBgf/l5ODhxiQBAggFriToDoTEv5zcf3ftQuk2s7uf0wM3MdAAPQDQAAxvn37lo+PDy4KZUDcycj4/z9CBojv3r0LEEAgG969eweLSBDEBSCWAAQYACaTbJ/kuok9AAAAAElFTkSuQmCC\" title=\"日本語\" alt=\"日本語\">
+              </a>
+            </li>\n
+          </ul><!--end .language-->\n            <div class=\"clearfix\"></div>\n
+        </div>\n
+      </div><header>
+        \n    \t<div class=\"wrapper\">
+          \n                <a href=\"http://www.vndirect.com.vn/\" id=\"logo\" onclick=\"GoHomePageMultigal()\"></a>\n                <a href=\"javascript:;\" class=\"mobile-nav\"></a><nav class=\"top-menu\">
+            <ul id=\"menu-top-menu\" class=\"menu\">
+              \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/signin/'>Giao dịch trực tuyến</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://banggia.vndirect.com.vn/chung-khoan/'>Bảng giá đặt lệnh</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/chung-khoan-truc-tuyen-tong-quan.shtml'>Tổng quan tài khoản</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/bao-cao-quan-ly/v2-tong-tai-san.shtml'>Trạng thái tài sản</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/giao-dich-co-phieu/dat-lenh-mua-ban.shtml'>Mua bán cổ phiếu</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/giao-dich-co-phieu/tra-cuu-quyen-mua.shtml'>Tra cứu quyền mua</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/giao-dich-tien/chuyen-tien-truc-tuyen.shtml'>Giao dịch tiền</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/bao-cao-quan-ly/lai-lo-danh-muc.shtml'>Lãi lỗ danh mục</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/trade/bao-cao-quan-ly/v2-bao-cao-no.shtml'>Báo cáo nợ</a>
+                  </li>
+                </ul>
+              </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/portal/co-phieu-khuyen-nghi/tong-quan.shtml'>Trung tâm tư vấn</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/co-phieu-khuyen-nghi/tong-quan.shtml'>Cổ phiếu khuyến nghị</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/cong-cu-phan-tich-chung-khoan/sang-loc-co-phieu.shtml'>Sàng lọc cổ phiếu</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/cong-cu-phan-tich-chung-khoan/bieu-do-ky-thuat.shtml'>Biểu đồ kỹ thuật</a>
+                  </li>
+                </ul>
+              </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/portal/thong-ke-thi-truong-chung-khoan/tong-quan.shtml'>Thông tin thị trường</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/thong-ke-thi-truong-chung-khoan/tong-quan.shtml'>Tổng quan thị trường</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/thong-ke-thi-truong-chung-khoan/lich-su-gia.shtml'>Thống kê thị trường</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/thong-tin-co-phieu/nhap-ma-chung-khoan.shtml'>Thông tin cổ phiếu</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/lich-su-kien.shtml'>Lịch sự kiện</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/tin-trong-nuoc.shtml'>Tin tức</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/canh-bao-dac-biet.shtml'>Cảnh báo đặc biệt</a>
+                  </li>
+                </ul>
+              </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/kien-thuc-co-ban-ve-chung-khoan-phai-sinh/'>Chứng khoán phái sinh</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='#'>Bảng giá phái sinh (sắp ra mắt)</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/hop-dong-tuong-lai-chi-so-vn30/'>Hợp đồng chứng khoán phái sinh</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/kien-thuc-co-ban-ve-chung-khoan-phai-sinh/'>Kiến thức về chứng khoán phái sinh</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='#'>Giao dịch phái sinh(sắp ra mắt)</a>
+                  </li>
+                </ul>
+              </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/dich-vu-chung-khoan/'>Dịch vụ</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/dich-vu-chung-khoan/'>Dịch vụ chứng khoán</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/dich-vu-chung-khoan/danh-muc-ky-quy-vndirect/'>Danh mục ký quỹ</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/dich-vu-ngan-hang-dau-tu/'>Dịch vụ Ngân hàng đầu tư</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/dich-vu-trai-phieu/'>Dịch vụ trái phiếu</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/nop-tien/'>Hướng dẫn nộp tiền</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/rut-tien/'>Hướng dẫn rút tiền</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/faq_cat/mo-tai-khoan/'>Câu hỏi thường gặp</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/bieu-phi-dich-vu/'>Biểu phí Dịch vụ</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/dich-vu-chung-khoan/bieu-mau/'>Biểu mẫu</a>
+                  </li>
+                </ul>
+              </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\">
+                <a href='https://www.vndirect.com.vn/ve-vndirect/'>Về VNDIRECT</a>
+                <ul class=\"sub-menu\">
+                  \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/ve-vndirect/'>Tổng quan VNDIRECT</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/category/tin-tuc-vndirect/hoat-dong-vndirect/'>Tin VNDIRECT</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='http://vndirectcareers.com/'>Cơ hội nghề nghiệp</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/gia-tri-cot-loi/'>Văn hóa VNDIRECT</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/portal/quan-he-co-dong-vndirect/tong-quan.shtml'>Quan hệ cổ đông</a>
+                  </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                    <a href='https://www.vndirect.com.vn/mang-luoi-chi-nhanh/'>Mạng lưới chi nhánh</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>\n
+      </header>\n
+    </div>\t\n\n<script src=\"https://static-01.vndirect.com.vn/cms/js/custom_api.js?45439f3a1da0d4d93328d95b49891f62\"></script>\n\n\n\t\t<div id=\"wrapper\">
+      \n\t\t\t\n\t\t\t\t\t\n\t\t\t<div id=\"container\">
+        \n\t\t\t\t\n\n\n\n\n<script type=\"text/javascript\">\n\t$(document).ready(function(){\n\t\tvar url_path = window.location.pathname;\n\t\tvar action = url_path.substring(url_path.lastIndexOf('/')+1, url_path.lenght);\n\t\tif(action != \"home.shtml\"){\n\t\t\t$('.openAcc').css(\"display\", \"block\");\n\t\t\t$('.boxnewhot_top').css(\"display\", \"block\");\n\t\t}\n\t});\n</script>\n\n<div class=\"boxnewhot_top\" style=\"margin-top: 0px;display: none;\">
+          \n\t<!-- Start Breadcrumbs -->\n\t\n\t<div class=\"newsContent\"></div>\n\t\n\t<!-- Search news -->\n\t<div class=\"box_search_global\" style=\"display: none;\">
+            \n\t\t<input type=\"text\" id=\"symbolSuggestionId\"\n\t\t\tonfocus=\"if (this.value=='Nhập mã chứng khoán') this.value='';\"\n\t\t\tonblur=\"if (this.value=='') this.value='Nhập mã chứng khoán';\"\n\t\t\tvalue=\"Nhập mã chứng khoán\"\n\t\t\tclass=\"input\" name=\"\">
+              \n\t\t<input type=\"button\" class=\"button\" id=\"fHome_btnSymbolSearch\"\n\t\t\tname=\"Enter\" />\n\t
+            </div>\n
+        </div> \n\t\t\t\t<div id=\"web_action_errors\" style=\"color: red; display: none;\"></div>\n\t\t\t\t<div id=\"web_action_messages\" style=\"color: blue; display: none;\"></div>\n\t\t\t\t\n\n\n\n\n\n\n<div id=\"page_searchSymbol\" style=\"padding-top: 50px;\">
+          \n\t<div class=\"titleBar\">
+            \n\t\t<span id=\"title\" style=\"margin-left: 25px;\">Chọn mã chứng khoán\n\t\t</span>\n\t
+          </div>\n\n\t<input id=\"forwardUrl\" type=\"hidden\"\n\t\tvalue=\"null\" />\n\t<form id=\"fSearchSymbol\" name=\"fSearchSymbol\"\n\t\taction=\"/portal/ajax/common/SymbolProcessing_SearchSymbol.shtml\"\n\t\tmethod=\"post\">
+            \n\t\t<input type=\"hidden\" id=\"fSearchSymbol_pagingInfo_indexPage\"\n\t\t\tname=\"pagingInfo.indexPage\" value=\"1\" />\n\t\t<input type=\"hidden\" id=\"symbolSuggestionId\" name=\"symbolSuggestion\"\n\t\t\tvalue=\"\" />\n\t\t<div class=\"table_Market clearfix\">
+              \n\t\t\t<table cellpadding=\"0\" cellspacing=\"6\" border=\"0\" width=\"100%\"\n\t\t\t\tstyle=\"border: 1px solid #B0B0B0; border-radius: 5px 5px 0 0;\">
+                \n\t\t\t\t<tr>
+                  \n\t\t\t\t\t<td width=\"4\">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"80\">\n\t\t\t\t\t\tMã CK\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"150\">\n\t\t\t\t\t\tTên công ty\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"150\">\n\t\t\t\t\t\tLĩnh vực\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"200\">\n\t\t\t\t\t\tSàn GDCK\n\t\t\t\t\t</td>\n\t\t\t\t\t<td width=\"100\">\n\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t</td>\n\t\t\t\t
+                </tr>\n\t\t\t\t<tr>
+                  \n\t\t\t\t\t<td>\n\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>
+                    \n\t\t\t\t\t\t<input type=\"text\" id=\"fSearchSymbol_symbol\"\n\t\t\t\t\t\t\tname=\"searchSymbol.symbol\" value=\"\" size=\"8\" />\n\t\t\t\t\t
+                  </td>\n\t\t\t\t\t<td>
+                    \n\t\t\t\t\t\t<input type=\"text\" id=\"fSearchSymbol_companyName\"\n\t\t\t\t\t\t\tname=\"searchSymbol.companyName\" size=\"20\">\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>
+                    \n\t\t\t\t\t\t<select id=\"fSearchSymbol_sectorCode\"\n\t\t\t\t\t\t\tname=\"searchSymbol.sectorCode\">
+                      \n\t\t\t\t\t\t\t<option value=\"%\">\n\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"8500\">\n\t\t\t\t\t\t\t\t\tBảo hiểm\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"8600\">\n\t\t\t\t\t\t\t\t\tBất động sản\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"9500\">\n\t\t\t\t\t\t\t\t\tCông nghệ\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"5700\">\n\t\t\t\t\t\t\t\t\tDu lịch & Giải trí\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"0500\">\n\t\t\t\t\t\t\t\t\tDầu khí\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"500\">\n\t\t\t\t\t\t\t\t\tDầu khí\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"5300\">\n\t\t\t\t\t\t\t\t\tDịch vụ bán lẻ\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"7500\">\n\t\t\t\t\t\t\t\t\tDịch vụ tiện ích\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"8700\">\n\t\t\t\t\t\t\t\t\tDịch vụ tài chính\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"2700\">\n\t\t\t\t\t\t\t\t\tHàng hóa và dịch vụ công nghiệp\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"1300\">\n\t\t\t\t\t\t\t\t\tHóa chất\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"8300\">\n\t\t\t\t\t\t\t\t\tNgân hàng\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"5500\">\n\t\t\t\t\t\t\t\t\tPhương tiện truyền thông\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"3500\">\n\t\t\t\t\t\t\t\t\tThực phẩm & Đồ uống\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"1700\">\n\t\t\t\t\t\t\t\t\tTài nguyên\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"6500\">\n\t\t\t\t\t\t\t\t\tViễn thông\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"2300\">\n\t\t\t\t\t\t\t\t\tXây dựng & Vật liệu\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"4500\">\n\t\t\t\t\t\t\t\t\tY tế\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"3300\">\n\t\t\t\t\t\t\t\t\tÔtô & linh kiện phụ tùng \n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"3700\">\n\t\t\t\t\t\t\t\t\tĐồ dùng cá nhân và đồ gia dụng\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t
+                    </select>\n\t\t\t\t\t
+                  </td>\n\t\t\t\t\t<td>
+                    \n\t\t\t\t\t\t<select id=\"fSearchSymbol_exchangeCode\"\n\t\t\t\t\t\t\tname=\"searchSymbol.exchangeCode\">
+                      \n\t\t\t\t\t\t\t<option value=\"%\">\n\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HOSTC\">\n\t\t\t\t\t\t\t\t\tSở GDCK T.P Hồ Chí Minh (Hochiminh Stock Exchange)\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HNX\">\n\t\t\t\t\t\t\t\t\tSở GDCK Hà Nội (Hanoi Stock Exchange)\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"OTC\">\n\t\t\t\t\t\t\t\t\tTT Phi tập trung (Over The Counter)\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"UPCOM\">\n\t\t\t\t\t\t\t\t\tTT GD CP của Công ty Đại chúng chưa NY\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"VN30\">\n\t\t\t\t\t\t\t\t\tVN30\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HNX30\">\n\t\t\t\t\t\t\t\t\tHNX30\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"VNMID\">\n\t\t\t\t\t\t\t\t\tVNMID\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"VNSML\">\n\t\t\t\t\t\t\t\t\tVNSML\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"VN100\">\n\t\t\t\t\t\t\t\t\tVN100\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"VNALL\">\n\t\t\t\t\t\t\t\t\tVNALL\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HNXFF\">\n\t\t\t\t\t\t\t\t\tHNXFF\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HNXMSCAP\">\n\t\t\t\t\t\t\t\t\tHNXMSCAP\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<option value=\"HNXLCAP\">\n\t\t\t\t\t\t\t\t\tHNXLARGECAP\n\t\t\t\t\t\t\t\t</option>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t
+                    </select>\n\t\t\t\t\t
+                  </td>\n\t\t\t\t\t<td>
+                    \n\t\t\t\t\t\t<input type=\"button\" class=\"iButton\"\n\t\t\t\t\t\t\tid=\"fSearchSymbol_btnSymbolSearch\"\n\t\t\t\t\t\t\tvalue='Tìm kiếm'>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t</td>\n\t\t\t\t
+                </tr>\n\t\t\t
+              </table>\n\t\t\t<div id=\"fSearchSymbol_result\">
+                \n\t\t\t\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\"\n\t\t\t\t\tstyle=\"border: 1px solid #B0B0B0; border-top: 0px; border-radius: 0 0 5px 5px;\">
+                  \n\t\t\t\t\t<colgroup>
+                    \n\t\t\t\t\t\t<col width=\"7%\" />\n\t\t\t\t\t\t<col width=\"25%\" />\n\t\t\t\t\t\t<col width=\"35%\" />\n\t\t\t\t\t\t<col width=\"21%\" />\n\t\t\t\t\t\t<col width=\"15%\" />\n\t\t\t\t\t
+                  </colgroup>\n\t\t\t\t\t<thead>
+                    \n\t\t\t\t\t\t<tr>
+                      \n\t\t\t\t\t\t\t<td width=\"5%\" align=\"center\" class=\"bordertd_\">
+                        \n\t\t\t\t\t\t\t\t<b>Mã CK\n\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t
+                      </td>\n\t\t\t\t\t\t\t<td width=\"15%\" align=\"center\" class=\"bordertd_\">
+                        \n\t\t\t\t\t\t\t\t<b>Tên công ty\n\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t
+                      </td>\n\t\t\t\t\t\t\t<td width=\"35%\" align=\"center\" class=\"bordertd_\">
+                        \n\t\t\t\t\t\t\t\t<b>Tên đầy đủ của công ty\n\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t
+                      </td>\n\t\t\t\t\t\t\t<td width=\"30\" align=\"center\" class=\"bordertd_\">
+                        \n\t\t\t\t\t\t\t\t<b>Lĩnh vực\n\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t
+                      </td>\n\t\t\t\t\t\t\t<td width=\"15%\" class=\"col_end_\" align=\"center\">
+                        \n\t\t\t\t\t\t\t\t<b>Sàn GDCK\n\t\t\t\t\t\t\t\t</b>\n\t\t\t\t\t\t\t
+                      </td>\n\t\t\t\t\t\t
+                    </tr>\n\t\t\t\t\t
+                  </thead>\n\t\t\t\t\t<tbody></tbody>\n\t\t\t\t
+                </table>\n\t\t\t
+              </div>\n\t\t
+            </div>\n\t\t<div id=\"fSearchSymbol_paging\" style=\"margin-top: 10px;\"></div>\n\t
+          </form>\n
+        </div>\n\n\n\t\t\t\t\n\n<div id=\"Footer_4_QuotesResearch\" class=\"note pn_main clearfix\" align=\"justify\">
+          \n\t<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
+            \n\t\t<tr>
+              \n\t\t\t<td width=\"39\">
+                <img height=\"52\" width=\"39\" src='/portal/images/front/note_left.gif;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21'>
+              </td>\n\t\t\t<td class=\"ct_note\">
+                \n\t\t\t\t<div style=\"font-size: 11px\">
+                  \n\t\t\t\t\t<b>
+                    <u>LƯU Ý: </u>
+                  </b>Thông tin được cung cấp trên trang web của VNDIRECT tại đây chỉ để tham khảo. VNDIRECT/đối tác/nhà cung cấp dịch vụ của VNDIRECT không chịu bất kỳ trách nhiệm nào về những thiệt hại trực tiếp, gián tiếp, do bị xử phạt, do ngẫu nhiên, do một tình huống đặc biệt hay mang tính hệ quả nào phát sinh từ, hoặc do liên hệ theo một cách nào đó với việc sử dụng website của VNDIRECT hay dựa vào những thông tin được cung cấp trên đó.\n\t\t\t\t
+                </div>\n\t\t\t
+              </td>\n\t\t\t<td width=\"3\">
+                <img height=\"52\" width=\"3\" src='/portal/images/front/note_right.gif;jsessionid=A9A7529A07B79B8CAC33F15C06EEBCA41497260502256PRO-OLT-PORTAL21'>
+              </td>\n\t\t
+            </tr>\n\t
+          </table>\n
+        </div>\n\t\t\t
+      </div>\n\t\t\t\n\t\t\t\n\t\t
+    </div>\n\t\t\n\n\n\n\n\n\n\n\n\n\n<div id=\"footer\">
+      \n    <div id=\"footer-contact\">
+        \n    \t<div class=\"wrapper\">
+          \n        \t<div class=\"contact-local\">
+            \n                <span>
+              <i class=\"fa fa-phone\"></i> Hotline: 1900 5454 09 - 043.941.0622
+            </span>\n                <span>
+              <i class=\"fa fa-envelope\"></i> Email: support@vndirect.com.vn
+            </span>\n                <a href=\"https://www.vndirect.com.vn/mang-luoi-chi-nhanh/\">
+              <i class=\"fa fa-map-marker\"></i> Mạng lưới chi nhánh
+            </a>\n
+          </div>\n            <div class=\"contact-social\">
+            \n                <a href=\"https://www.facebook.com/vndirect/\" target=\"_blank\">
+              <i class=\"fa fa-facebook-square\"></i>
+            </a>\n<!--                <a href=\"\"><i class=\"fa fa-google-plus-square\"></i></a>\n                <a href=\"\"><i class=\"fa fa-linkedin-square\"></i></a>-->\n                <a target=\"_blank\" href=\"https://www.youtube.com/channel/UCWophLNUfFTJIUirKdD1q0Q\">
+              <i class=\"fa fa-youtube-square\"></i>
+            </a>\n
+          </div>\n
+        </div>\n
+      </div><div id=\"footer-nav\">
+        \n    \t<div class=\"wrapper\">
+          \n            <div class=\"section\">
+            \n                <h3>
+              Công cụ giao dịch <i class=\"fa fa-chevron-circle-down\"></i>
+            </h3>\n                <div class=\"bottom-menu-1\">
+              <ul id=\"menu-bottom-menu-1-vietnamese\" class=\"menu\">
+                \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/trade/chung-khoan-truc-tuyen-tong-quan.shtml'>Giao dịch trực tuyến</a>
+                </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/mobile-app/'>Mobile Trading</a>
+                </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://banggia.vndirect.com.vn/chung-khoan/'>Bảng giá thông minh</a>
+                </li>
+              </ul>
+            </div>\n
+          </div>\n            <div class=\"section\">
+            \n            \t<h3>
+              Thông tin tư vấn <i class=\"fa fa-chevron-circle-down\"></i>
+            </h3>\n                <div class=\"bottom-menu-2\">
+              <ul id=\"menu-bottom-menu-2-vietnamese\" class=\"menu\">
+                \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/portal/co-phieu-khuyen-nghi/tong-quan.shtml'>Cổ phiếu khuyến nghị</a>
+                </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/portal/cong-cu-phan-tich-chung-khoan/bieu-do-ky-thuat.shtml'>Biểu đồ kỹ thuật</a>
+                </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='http://tuvan.vndirect.com.vn/datafeed/'>DataFeed</a>
+                </li>
+              </ul>
+            </div>\n
+          </div>\n            <div class=\"section last\">
+            \n            \t<h3>
+              Hướng dẫn <i class=\"fa fa-chevron-circle-down\"></i>
+            </h3>\n                <div class=\"bottom-menu-3\">
+              <ul id=\"menu-bottom-menu-3-vietnamese\" class=\"menu\">
+                \n<li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/huong-dan-lenh-dieu-kien/'>Hướng dẫn lệnh điều kiện</a>
+                </li><li class=\"menu-item menu-item-type-post_type menu-item-object-page \">
+                  <a href='https://www.vndirect.com.vn/huong-dan-otp/'>Đăng ký và sử dụng OTP</a>
+                </li>
+              </ul>
+            </div>\n
+          </div>              \n            <div class=\"clearfix\"></div>          \n
+        </div>\n
+      </div><footer>
+        \n    \t<div class=\"wrapper\">
+          \n            <div class=\"left\">
+            \n                <div class=\"footer-menu\">
+              <ul id=\"menu-footer-menu-vietnamese\" class=\"menu\">
+                <li id=\"menu-item-159\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-159\">
+                  <a href=\"https://www.vndirect.com.vn/dieu-khoan-su-dung/\">
+                    Điều khoản sử dụng website<span>|</span>
+                  </a>
+                </li>\n<li id=\"menu-item-14360\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-14360\">
+                  <a href=\"https://www.vndirect.com.vn/cong-bo-rui-ro/\">
+                    Công bố rủi ro<span>|</span>
+                  </a>
+                </li>\n
+              </ul>
+            </div>                <div class=\"clearfix\"></div>\n                <p class=\"copyright\">Bản quyền thuộc Công ty Cổ phần Chứng khoán VNDIRECT</p>\n
+          </div>\n            <div class=\"right\">
+            \n            \tTrụ sở chính: Số 1 Nguyễn Thượng Hiền, Hai Bà Trưng, Hà Nội <br>
+              \n\t\t\t\t<span>Điện thoại: 04.3.9724568</span>\n                <span>Fax: 04.3.9724600</span>\n
+            </div>\n            <div class=\"clearfix\"></div>\n
+        </div>\n
+      </footer><div id=\"bottom-fix\">
+        \n    \t<div class=\"wrapper\">
+          \n        \t<span class=\"sinfo vnindex-info\"></span>\n            <span class=\"sinfo seperate hnx-info\"></span>\n            <a class=\"icon-faq\" href=\"https://www.vndirect.com.vn/trung-tam-dich-vu-khach-hang/\">Hỏi đáp</a>\n            <a class=\"icon-chat\" href=\"javascript:;\" onclick=\"$zopim.livechat.window.toggle();\">Chat với chúng tôi</a>\n            <a href=\"https://www.vndirect.com.vn/open-account/\" class=\"button-api button-orange button-signup\" style=\"display: inline;\">
+            <i class=\"fa fa-unlock-alt\"></i>Mở tài khoản
+          </a>\n            <div class=\"clearfix\"></div>\n            <div id=\"noti-icon\">
+            <span class=\"fa fa-bell\"></span>
+            <label></label>
+          </div>\n            <div id=\"noti-content\" style=\"display: none;\"></div>\n
+        </div>        \n
+      </div>\n
+    </div>\n\n\n\n\n\t\n\n\n<div id=\"surveyPopup\" style=\"width:100%; height:auto\"></div>\n\n<script type=\"text/javascript\" async=\"async\">\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-2025955-1']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = 'https://ssl.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n    if(typeof(TRACK_CROSS_DOMAIN_CODE) != 'undefined') {\n    \t_gaq.push(['_trackEvent', 'CrossDomain', 'CheckCrossDomainByAjaxPostRequest', 'HttpStatusCode: ' + TRACK_CROSS_DOMAIN_CODE]);\n    }\n  })();\n  \n  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=\n\t    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.\n\t    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute(\"charset\",\"utf-8\");\n\t    $.src=\"//v2.zopim.com/?3YktgKwqWaNvJ6ryNkn8V8buqe8I60Sa\";z.t=+new Date;$.\n\t    type=\"text/javascript\";e.parentNode.insertBefore($,e)})(document,\"script\");\n</script>\n\n<!-- Google Tag Manager -->\n<noscript>
+      <iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-MT7LL3\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>
+    </noscript>\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-MT7LL3');</script>\n<!-- End Google Tag Manager -->\n\n\t
+  </body>\n
+</html>\n"
