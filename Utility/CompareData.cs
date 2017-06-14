@@ -16,7 +16,7 @@ namespace StockAnalysis.Utility
 
         private void InitBCTC()
         {
-            string[] maCks = GetAllMack();
+            string[] maCks = FileUtility.ReadAllMack();
             int length = maCks.Length;
 
 

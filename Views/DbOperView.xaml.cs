@@ -1283,7 +1283,8 @@ namespace StockAnalysis.Views
 
         private void getVndirectData_Click(object sender, RoutedEventArgs e)
         {
-            
+            VnDirect vndirect = new VnDirect();
+            vndirect.GetBaocao();
 
         }
     }

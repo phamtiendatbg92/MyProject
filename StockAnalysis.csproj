@@ -70,6 +70,7 @@
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CheckBaoCao\CheckByVietStock.cs" />
+    <Compile Include="CheckBaoCao\VnDirect.cs" />
     <Compile Include="congty.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
@@ -92,6 +93,7 @@
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DatabaseUtility.cs" />
     <Compile Include="Utility\Fields.cs" />
+    <Compile Include="Utility\FileUtility.cs" />
     <Compile Include="Utility\NetworkUtility.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\DbOperViewModel.cs" />
@@ -180,7 +182,10 @@
       <LastGenOutput>DataBaseModel.cs</LastGenOutput>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Content>
-    <Resource Include="DataVietStock\XMLFile1.xml" />
+    <Resource Include="DataVietStock\VndirectKQKD.xml" />
+    <Resource Include="DataVietStock\VndirectCDKT.xml">
+      <SubType>Designer</SubType>
+    </Resource>
     <Resource Include="DataVietStock\CDKT.xml">
       <SubType>Designer</SubType>
     </Resource>
