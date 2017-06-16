@@ -1283,6 +1283,7 @@ namespace StockAnalysis.Views
 
         private void getVndirectData_Click(object sender, RoutedEventArgs e)
         {
+            NetworkUtility.SendAjaxRequestForVndirec("","");
             VnDirect vndirect = new VnDirect();
             vndirect.GetBaocao();
 

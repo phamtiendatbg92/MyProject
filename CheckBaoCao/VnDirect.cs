@@ -33,6 +33,7 @@ namespace StockAnalysis.CheckBaoCao
                     string url = "https://www.vndirect.com.vn/portal/bang-can-doi-ke-toan/" + mack + ".shtml";
                     string result = NetworkUtility.SendPostRequest(url, myParameters);
                     ReadBangCanDoiKeToan(result, mack);
+
                 }
             }
         }
@@ -69,7 +70,7 @@ namespace StockAnalysis.CheckBaoCao
                                     AppendValue(listResult[i], Fields.NoNganHan, listValue[i].ToString());
                                 }
                             }
-                            else if (content.Contains("Nợ dài hạn"))
+                            else if (content.Contains("nợ dài hạn"))
                             {
                                 listValue = ExtractData(node);
                                 for (int i = 0; i < listValue.Count; i++)
@@ -96,47 +97,48 @@ namespace StockAnalysis.CheckBaoCao
         private List<long> ExtractData(HtmlNode node)
         {
             List<long> listValue = new List<long>();
-            HtmlNodeCollection tdNodes = node.ChildNodes;
-            for (int i = 1; i < tdNodes.Count; i++)
+            HtmlNodeCollection NodesLv1s = node.ChildNodes;
+            foreach (HtmlNode NodesLv1 in NodesLv1s)
             {
-                HtmlNode temp = tdNodes[i];
-                HtmlNode childNode = null;
-                if (temp.HasChildNodes)
-                {
-                    childNode = temp.FirstChild;
-                }
-                else
+                if (!NodesLv1.HasChildNodes)
                 {
                     continue;
                 }
-                if (childNode.Attributes["style"] != null)
+                HtmlNodeCollection NodesLv2s = NodesLv1.ChildNodes;
+                foreach (HtmlNode NodesLv2 in NodesLv2s)
                 {
-                    string attvalue = childNode.Attributes["style"].Value;
-                    if (attvalue.Contains("text-align: right;"))
+                    if (NodesLv2.Attributes["style"] != null)
                     {
-                        string content = childNode.WriteContentTo();
-                        content = content.Replace(" ", "");
-                        try
+                        string attvalue = NodesLv2.Attributes["style"].Value;
+                        if (attvalue.Contains("text-align: right;"))
                         {
-                            if (content == "")
+                            string content = NodesLv2.WriteContentTo();
+                            content = content.Replace(" ", "");
+                            try
                             {
-                                long value = 0;
-                                listValue.Add(value);
+                                if (content == "")
+                                {
+                                    long value = 0;
+                                    listValue.Add(value);
+                                }
+                                else
+                                {
+                                    long value = Convert.ToInt64(content.Replace(",", ""));
+                                    listValue.Add(value);
+                                }
                             }
-                            else
+                            catch (Exception e)
                             {
-                                long value = Convert.ToInt64(content.Replace(",", ""));
-                                listValue.Add(value);
+                                MessageBox.Show("Có exception khi tách data từ html: " + e.Message);
+                                Environment.Exit(0);
                             }
-                        }
-                        catch (Exception e)
-                        {
-                            MessageBox.Show("Có exception khi tách data từ html: " + e.Message);
-                            Environment.Exit(0);
                         }
                     }
                 }
-
+            }
+            if (listValue[4] == 0)
+            {
+                listValue.RemoveAt(4);
             }
             if (listValue.Count != 4)
             {
