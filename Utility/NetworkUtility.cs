@@ -6,6 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using StockAnalysis.CheckBaoCao;
+using System.Runtime.Serialization.Json;
+using Newtonsoft.Json;
 
 namespace StockAnalysis.Utility
 {
@@ -69,39 +72,47 @@ namespace StockAnalysis.Utility
         }
         public static string SendAjaxRequestForVndirec(string url, string parameters)
         {
-            WebProxy wp = new WebProxy("proxy1.tsdv.com.vn", 3128);
-            wp.Credentials = new NetworkCredential("datpt", "tsdv2015");
+            //WebProxy wp = new WebProxy("proxy1.tsdv.com.vn", 3128);
+            //wp.Credentials = new NetworkCredential("datpt", "tsdv2015");
 
-            parameters = "searchObject.fiscalQuarter=Q1&searchObject.fiscalYear=2016&searchObject.moneyRate=1,000,000&searchObject.numberTerm=5";
             url = "https://www.vndirect.com.vn/portal/ajax/listed/SearchIncomeStatement.shtml";
             string url2 = "https://www.vndirect.com.vn/portal/bao-cao-ket-qua-kinh-doanh/aaa.shtml";
-
+            string param = "searchObject.fiscalQuarter=Q1&searchObject.fiscalYear=2016&searchObject.moneyRate=1,000,000&searchObject.numberTerm=4";
 
             CookieContainer cookies = new CookieContainer();
             HttpWebRequest webRequest1111 = (HttpWebRequest)WebRequest.Create(url2);
             webRequest1111.CookieContainer = cookies;
-            webRequest1111.Proxy = wp;
+            //webRequest1111.Proxy = wp;
 
             HttpWebResponse response = (HttpWebResponse)webRequest1111.GetResponse();
             StreamReader responseReader = new StreamReader(response.GetResponseStream());
-
-            
+            CookieCollection cookieCollection = response.Cookies;
+            Cookie id = cookieCollection[0];
+            string value = id.Value;
             string json = "{\"searchObject.fiscalQuarter\": \"Q1\", \"searchObject.fiscalYear\": \"2016\", \"searchObject.moneyRate\": \"1,000,000\", \"searchObject.numberTerm\": \"5\"}";
-            
+
+
+
+
+            CookieContainer cookies2 = new CookieContainer();
+            cookies.Add(id);
 
             HttpWebRequest webRequest22222 = (HttpWebRequest)WebRequest.Create(url);
             webRequest22222.CookieContainer = cookies;
-            webRequest22222.Proxy = wp;
+            WebHeaderCollection header = new WebHeaderCollection();
+            header.Add(id.Name, id.Value);
+            webRequest22222.Headers = header;
+            //webRequest22222.Headers = new WebHeaderCollection();
             webRequest22222.Method = "POST";
-            webRequest22222.ContentLength = json.Length;
-            webRequest22222.ContentType = "application/json; charset=utf-8";
-            webRequest22222.Proxy = wp;
+            webRequest22222.ContentLength = param.Length;
+            //webRequest22222.ContentType = "application/x-www-form-urlencoded";
+            //webRequest22222.Proxy = wp;
             StreamWriter myWriter = null;
+            WebClient abc = new WebClient();
             try
             {
                 myWriter = new StreamWriter(webRequest22222.GetRequestStream());
-                myWriter.Write(json);
-                myWriter.Flush();
+                myWriter.Write(param);
             }
             catch (Exception e)
             {
@@ -125,11 +136,13 @@ namespace StockAnalysis.Utility
                 result = result.Replace("\n", string.Empty);
                 result = result.Replace("&nbsp;", string.Empty);
                 result = ClearSpace(result);
-                File.WriteAllText("tttttttttttttt.txt",result);
+                File.WriteAllText("test.txt", result);
                 // Close and clean up the StreamReader
                 sr.Close();
             }
 
+            // test read data
+            //RootObject myDetails = JsonConvert.DeserializeObject<RootObject>(result);
             return "";
 
         }

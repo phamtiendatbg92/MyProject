@@ -30,12 +30,21 @@ namespace StockAnalysis.Views
     {
         public static stocksqlEntities entities = new stocksqlEntities();
         private Dictionary<string, List<bctc>> dataNeedUpdated;
+        private CompareData compareData = new CompareData();
+        private BackgroundWorker CompareWorker = new BackgroundWorker();
         public DbOperView()
         {
             InitializeComponent();
-
+            CompareWorker = new BackgroundWorker();
+            CompareWorker.DoWork += CheckDBWorker;
+            CompareWorker.ProgressChanged += bw_ProgressChanged;
+            CompareWorker.WorkerReportsProgress = true;
+            compareData.ReportProgressCallback += CompareData_ReportProgressCallback;
         }
-
+        private void CompareData_ReportProgressCallback(int percent)
+        {
+            CompareWorker.ReportProgress(percent);
+        }
         public void SetDataContext(DbOperViewModel vm)
         {
             this.DataContext = vm;
@@ -1274,18 +1283,23 @@ namespace StockAnalysis.Views
             }
         }
 
-        
+
         private void checkDB_Click(object sender, RoutedEventArgs e)
         {
-            CompareData compareData = new CompareData();
-            compareData.DoCompare(false);
+            CompareWorker.RunWorkerAsync();
+        }
+        private void CheckDBWorker(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+
+            compareData.DoCompare(true);
+            MessageBox.Show("Bố mày làm cho mày xong rồi đấy :))))");
         }
 
         private void getVndirectData_Click(object sender, RoutedEventArgs e)
         {
             NetworkUtility.SendAjaxRequestForVndirec("","");
-            VnDirect vndirect = new VnDirect();
-            vndirect.GetBaocao();
+            //VnDirect vndirect = new VnDirect();
+            //vndirect.GetBaocao();
 
         }
     }

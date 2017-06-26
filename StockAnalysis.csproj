@@ -42,6 +42,9 @@
     <Reference Include="HtmlAgilityPack">
       <HintPath>lib\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -71,6 +74,7 @@
     </Compile>
     <Compile Include="CheckBaoCao\CheckByVietStock.cs" />
     <Compile Include="CheckBaoCao\VnDirect.cs" />
+    <Compile Include="CheckBaoCao\RootModel.cs" />
     <Compile Include="congty.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
