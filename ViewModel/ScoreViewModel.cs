@@ -10,12 +10,12 @@ namespace StockAnalysis.ViewModel
 {
     /*
      * Kiểm tra các giá trị:
-     * Doanh thu
-     * Lợi nhuận sau thuế
-     * Lợi nhuận gộp
-     * Chi phí bán hàng
-     * Chi phí quản lý doanh nghiệp
-     * Chi phí lãi vay
+     * Doanh thu ///////////
+     * Lợi nhuận sau thuế //////
+     * Lợi nhuận gộp  /////
+     * Chi phí bán hàng  /////
+     * Chi phí quản lý doanh nghiệp /////
+     * Chi phí lãi vay ///
      * Vốn góp của chủ sở hữu
      * Nợ ngắn hạn
      * Nợ dài hạn

@@ -72,9 +72,9 @@
     <Compile Include="bctc.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CheckBaoCao\CheckByVietStock.cs" />
+    <Compile Include="CheckBaoCao\VietStock.cs" />
     <Compile Include="CheckBaoCao\VnDirect.cs" />
-    <Compile Include="CheckBaoCao\RootModel.cs" />
+    <Compile Include="CheckBaoCao\RootObject.cs" />
     <Compile Include="congty.cs">
       <DependentUpon>DataBaseModel.tt</DependentUpon>
     </Compile>
@@ -93,7 +93,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Utility\CompareData.cs" />
+    <Compile Include="CheckBaoCao\CompareData.cs" />
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Utility\DatabaseUtility.cs" />
     <Compile Include="Utility\Fields.cs" />

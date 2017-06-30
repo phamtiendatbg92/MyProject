@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using Newtonsoft.Json;
 using StockAnalysis.Utility;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,19 @@ namespace StockAnalysis.CheckBaoCao
 {
     public class VnDirect
     {
+        public delegate void ReportProgressHandler(int percent);
+        public event ReportProgressHandler ReportProgressCallback;
+        public void ReportProgress(int percent)
+        {
+            ReportProgressCallback?.Invoke(percent);
+        }
 
-        public void GetBaocao()
+        public void DownLoadData()
         {
             string[] maCks = FileUtility.ReadAllMack();
             int length = maCks.Length;
-
             string startQuy = "Q" + Constants.QUY_HIEN_TAI;
-
+            totalResultVndirect = new List<StringBuilder>();
             for (int i = 0; i < length; i++)
             {
                 string mack = maCks[i];
@@ -26,27 +32,38 @@ namespace StockAnalysis.CheckBaoCao
                 {
                     string param1 = "searchObject.fiscalQuarter=" + startQuy;
 
-                    string param2 = "&searchObject.fiscalYear=" + (Constants.NAM_HIEN_TAI - i);
-                    string myParameters = param1 + param2 + "& searchObject.moneyRate=1,000,000&searchObject.numberTerm=4";
-
+                    string param2 = "&searchObject.fiscalYear=" + (Constants.NAM_HIEN_TAI - j);
+                    string myParameters = param1 + param2 + "& searchObject.moneyRate=1&searchObject.numberTerm=4";
 
                     string url = "https://www.vndirect.com.vn/portal/bang-can-doi-ke-toan/" + mack + ".shtml";
-                    string result = NetworkUtility.SendPostRequest(url, myParameters);
-                    ReadBangCanDoiKeToan(result, mack);
-
+                    string resultCanDoiKeToan = NetworkUtility.SendPostRequest(url, myParameters);
+                    ReadBangCanDoiKeToan(resultCanDoiKeToan, mack);
+                    string url2 = "https://www.vndirect.com.vn/portal/bao-cao-ket-qua-kinh-doanh/" + mack + ".shtml";
+                    string resultKQKD = NetworkUtility.SendAjaxRequestForVndirec(url2, myParameters);
+                    ReadKQKD(resultKQKD, mack);
+                    Console.WriteLine("{0}", i * 3 + j);
+                    // write result to total result
+                    for (int k = 0; k < listResult.Count; k++)
+                    {
+                        totalResultVndirect.Add(listResult[k]);
+                    }
                 }
+                ReportProgress(i * 100 / length);
             }
+            // write result to text file
+            FileUtility.WriteResultToTextFile(totalResultVndirect, "VndirectResult.txt");
         }
-
+        private List<StringBuilder> listResult;
+        private List<StringBuilder> totalResultVndirect;
         private void ReadBangCanDoiKeToan(string htmlContent, string mack)
         {
             HtmlDocument document = new HtmlDocument();
             document.LoadHtml(htmlContent);
             HtmlNodeCollection collection = document.DocumentNode.SelectNodes("//b");
-            List<StringBuilder> listResult = InidResult(collection, mack);
+            listResult = InidResult(collection, mack);
             if (listResult.Count != 4)
             {
-                MessageBox.Show("Khởi tạo thiếu data, khởi tạo được được " + listResult.Count + " quý");
+                MessageBox.Show("Khởi tạo thiếu data, khởi tạo được được " + listResult.Count + " quý!!!" + mack);
                 Environment.Exit(0);
             }
             collection = document.DocumentNode.SelectNodes("//tr");
@@ -67,7 +84,7 @@ namespace StockAnalysis.CheckBaoCao
                                 listValue = ExtractData(node);
                                 for (int i = 0; i < listValue.Count; i++)
                                 {
-                                    AppendValue(listResult[i], Fields.NoNganHan, listValue[i].ToString());
+                                    FileUtility.AppendValue(listResult[i], Fields.NoNganHan, listValue[i].ToString());
                                 }
                             }
                             else if (content.Contains("nợ dài hạn"))
@@ -75,7 +92,7 @@ namespace StockAnalysis.CheckBaoCao
                                 listValue = ExtractData(node);
                                 for (int i = 0; i < listValue.Count; i++)
                                 {
-                                    AppendValue(listResult[i], Fields.NoDaiHan, listValue[i].ToString());
+                                    FileUtility.AppendValue(listResult[i], Fields.NoDaiHan, listValue[i].ToString());
                                 }
                             }
                             break;
@@ -85,7 +102,7 @@ namespace StockAnalysis.CheckBaoCao
                                 listValue = ExtractData(node);
                                 for (int i = 0; i < listValue.Count; i++)
                                 {
-                                    AppendValue(listResult[i], Fields.VonGopCuaChuSoHuu, listValue[i].ToString());
+                                    FileUtility.AppendValue(listResult[i], Fields.VonGopCuaChuSoHuu, listValue[i].ToString());
                                 }
                             }
                             break;
@@ -94,6 +111,46 @@ namespace StockAnalysis.CheckBaoCao
             }
         }
 
+        private void ReadKQKD(string htmlContent, string mack)
+        {
+            RootObject rootObject = new RootObject();
+            var ab = JsonConvert.DeserializeObject<RootObject>(htmlContent);
+            List<FinanceInfoList> financeInfoList = ab.model.financeInfoList;
+
+            int count = financeInfoList.Count;
+            for (int i = 0; i < financeInfoList.Count; i++)
+            {
+                string item = financeInfoList[i].itemName;
+                switch (item)
+                {
+                    case "Tổng doanh thu hoạt động kinh doanh":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.DoanhThuBanHangVaCungCapDichVu);
+                        break;
+                    case "Lợi nhuận sau thuế thu nhập doanh nghiệp":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.LoiNhuanSauThue);
+                        break;
+                    case "Lợi nhuận gộp":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.LoiNhuanGop);
+                        break;
+                    case "Chi phí bán hàng":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.ChiPhiBanHang);
+                        break;
+                    case "Chi phí quản lý doanh nghiệp":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.ChiPhiQuanLyDoanhNghiep);
+                        break;
+                    case "Trong đó: Chi phí lãi vay":
+                        AppendValueFromJsonObject(financeInfoList[i], Fields.ChiPhiLaiVay);
+                        break;
+                }
+            }
+        }
+        private void AppendValueFromJsonObject(FinanceInfoList financeObject, string field)
+        {
+            FileUtility.AppendValue(listResult[0], field, financeObject.strNumericValue1.Replace(",", ""));
+            FileUtility.AppendValue(listResult[1], field, financeObject.strNumericValue2.Replace(",", ""));
+            FileUtility.AppendValue(listResult[2], field, financeObject.strNumericValue3.Replace(",", ""));
+            FileUtility.AppendValue(listResult[3], field, financeObject.strNumericValue4.Replace(",", ""));
+        }
         private List<long> ExtractData(HtmlNode node)
         {
             List<long> listValue = new List<long>();
@@ -160,17 +217,14 @@ namespace StockAnalysis.CheckBaoCao
                 }
 
                 StringBuilder s = new StringBuilder();
-                AppendValue(s, Fields.MaCk, mack);
-                AppendValue(s, Fields.Quy, content.Substring(1, 1)); // Q1/2017
-                AppendValue(s, Fields.Nam, content.Substring(3, 4)); // Q1/2017
+                FileUtility.AppendValue(s, Fields.MaCk, mack);
+                FileUtility.AppendValue(s, Fields.Quy, content.Substring(1, 1)); // Q1/2017
+                FileUtility.AppendValue(s, Fields.Nam, content.Substring(3, 4)); // Q1/2017
                 listResult.Add(s);
             }
             return listResult;
         }
 
-        private void AppendValue(StringBuilder s, string field, string value)
-        {
-            s.Append(field + "_" + value + ";");
-        }
+
     }
 }

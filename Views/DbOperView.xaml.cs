@@ -32,6 +32,8 @@ namespace StockAnalysis.Views
         private Dictionary<string, List<bctc>> dataNeedUpdated;
         private CompareData compareData = new CompareData();
         private BackgroundWorker CompareWorker = new BackgroundWorker();
+        private VietStock vietStockObj = new VietStock();
+        private VnDirect vndirectObj = new VnDirect();
         public DbOperView()
         {
             InitializeComponent();
@@ -39,6 +41,8 @@ namespace StockAnalysis.Views
             CompareWorker.DoWork += CheckDBWorker;
             CompareWorker.ProgressChanged += bw_ProgressChanged;
             CompareWorker.WorkerReportsProgress = true;
+            vietStockObj.ReportProgressCallback += CompareData_ReportProgressCallback;
+            vndirectObj.ReportProgressCallback += CompareData_ReportProgressCallback;
             compareData.ReportProgressCallback += CompareData_ReportProgressCallback;
         }
         private void CompareData_ReportProgressCallback(int percent)
@@ -1290,17 +1294,21 @@ namespace StockAnalysis.Views
         }
         private void CheckDBWorker(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
+            Dispatcher.Invoke(()=> {
+                progressLabel.Content = "Downloading vietstock data......";
+                //vietStockObj.DownLoadData();
+            });
+            
+            //vietStockObj.DownLoadData();
+            Dispatcher.Invoke(() => {
+                progressLabel.Content = "Downloading vndirect data......";
+                
+            });
+            vndirectObj.DownLoadData();
 
-            compareData.DoCompare(true);
+            //progressLabel.Content = "Comparing data......";
+            compareData.DoCompare();
             MessageBox.Show("Bố mày làm cho mày xong rồi đấy :))))");
-        }
-
-        private void getVndirectData_Click(object sender, RoutedEventArgs e)
-        {
-            NetworkUtility.SendAjaxRequestForVndirec("","");
-            //VnDirect vndirect = new VnDirect();
-            //vndirect.GetBaocao();
-
         }
     }
 }

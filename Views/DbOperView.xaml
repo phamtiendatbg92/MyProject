@@ -42,19 +42,18 @@
                     VerticalAlignment="Center"
                     Width="120"
                     Click="checkDB_Click"/>
-            <Button Content="Get Vndirect Data"
-                    x:Name="getVndirectData"
-                    VerticalAlignment="Center"
-                    Width="120"
-                    Click="getVndirectData_Click"/>
         </StackPanel>
-        <ProgressBar Maximum="100"
+        <StackPanel Grid.Row="2">
+            <Label x:Name="progressLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <ProgressBar Maximum="100"
                      Height="20"
                      x:Name="progressBar"
                      VerticalAlignment="Center"
                      Margin="20,0"
-                     Grid.Row="2"
+                     
                      />
+        </StackPanel>
+        
         <StackPanel Grid.Row="3" Orientation="Horizontal">
             <Label Content="Mã chứng khoán: " VerticalContentAlignment="Center"/>
             <ComboBox ItemsSource="{Binding MaCks}"
