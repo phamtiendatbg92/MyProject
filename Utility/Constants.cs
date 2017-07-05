@@ -8,6 +8,8 @@ namespace StockAnalysis.Utility
 {
     public static class Constants
     {
+        public const string CONTENT_RESULT_VIETSTOCK_FILE_NAME = "ContentResultVietstock.txt";
+        public const string CONTENT_RESULT_VNDIRECT_FILE_NAME = "ContentResultVndirect.txt";
         public static int QUY_HIEN_TAI { get; set; }
         public static int NAM_HIEN_TAI { get; set; }
         // Chỉ số tăng trưởng doanh thu

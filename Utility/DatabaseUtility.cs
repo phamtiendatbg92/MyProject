@@ -33,6 +33,11 @@ namespace StockAnalysis.Utility
             }
             return bctcDic;
         }
+        public static List<bctc> GetAllBctc2()
+        {
+            List<bctc> bctcList = entities.bctcs.ToList();
+            return bctcList;
+        }
         public static Dictionary<string, List<bctc>> GetBctcNeedUpdate()
         {
             Dictionary<string, List<bctc>> bctcDic = new Dictionary<string, List<bctc>>();

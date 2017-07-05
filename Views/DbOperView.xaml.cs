@@ -1296,9 +1296,9 @@ namespace StockAnalysis.Views
         {
             Dispatcher.Invoke(()=> {
                 progressLabel.Content = "Downloading vietstock data......";
-                //vietStockObj.DownLoadData();
+                
             });
-            
+            vietStockObj.DownLoadData();
             //vietStockObj.DownLoadData();
             Dispatcher.Invoke(() => {
                 progressLabel.Content = "Downloading vndirect data......";

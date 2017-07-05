@@ -38,7 +38,7 @@ namespace StockAnalysis.CheckBaoCao
                 }
                 ReportProgress(i * 100 / length);
             }
-            FileUtility.WriteResultToTextFile(BctcVietStock, "resultVietStock.txt");
+            FileUtility.WriteResultToTextFile(BctcVietStock, Constants.CONTENT_RESULT_VIETSTOCK_FILE_NAME);
         }
 
         

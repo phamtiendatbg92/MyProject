@@ -51,7 +51,7 @@ namespace StockAnalysis.CheckBaoCao
                 ReportProgress(i * 100 / length);
             }
             // write result to text file
-            FileUtility.WriteResultToTextFile(totalResultVndirect, "VndirectResult.txt");
+            FileUtility.WriteResultToTextFile(totalResultVndirect, Constants.CONTENT_RESULT_VNDIRECT_FILE_NAME);
         }
         private List<StringBuilder> listResult;
         private List<StringBuilder> totalResultVndirect;
@@ -61,11 +61,6 @@ namespace StockAnalysis.CheckBaoCao
             document.LoadHtml(htmlContent);
             HtmlNodeCollection collection = document.DocumentNode.SelectNodes("//b");
             listResult = InidResult(collection, mack);
-            if (listResult.Count != 4)
-            {
-                MessageBox.Show("Khởi tạo thiếu data, khởi tạo được được " + listResult.Count + " quý!!!" + mack);
-                Environment.Exit(0);
-            }
             collection = document.DocumentNode.SelectNodes("//tr");
             foreach (HtmlNode node in collection)
             {
@@ -82,7 +77,7 @@ namespace StockAnalysis.CheckBaoCao
                             if (content.Contains("nợ ngắn hạn"))
                             {
                                 listValue = ExtractData(node);
-                                for (int i = 0; i < listValue.Count; i++)
+                                for (int i = 0; i < listResult.Count; i++)
                                 {
                                     FileUtility.AppendValue(listResult[i], Fields.NoNganHan, listValue[i].ToString());
                                 }
@@ -90,7 +85,7 @@ namespace StockAnalysis.CheckBaoCao
                             else if (content.Contains("nợ dài hạn"))
                             {
                                 listValue = ExtractData(node);
-                                for (int i = 0; i < listValue.Count; i++)
+                                for (int i = 0; i < listResult.Count; i++)
                                 {
                                     FileUtility.AppendValue(listResult[i], Fields.NoDaiHan, listValue[i].ToString());
                                 }
@@ -100,7 +95,7 @@ namespace StockAnalysis.CheckBaoCao
                             if (content.Contains("vốn đầu tư của chủ sở hữu"))
                             {
                                 listValue = ExtractData(node);
-                                for (int i = 0; i < listValue.Count; i++)
+                                for (int i = 0; i < listResult.Count; i++)
                                 {
                                     FileUtility.AppendValue(listResult[i], Fields.VonGopCuaChuSoHuu, listValue[i].ToString());
                                 }
@@ -146,10 +141,15 @@ namespace StockAnalysis.CheckBaoCao
         }
         private void AppendValueFromJsonObject(FinanceInfoList financeObject, string field)
         {
-            FileUtility.AppendValue(listResult[0], field, financeObject.strNumericValue1.Replace(",", ""));
-            FileUtility.AppendValue(listResult[1], field, financeObject.strNumericValue2.Replace(",", ""));
-            FileUtility.AppendValue(listResult[2], field, financeObject.strNumericValue3.Replace(",", ""));
-            FileUtility.AppendValue(listResult[3], field, financeObject.strNumericValue4.Replace(",", ""));
+            List<string> listValue = new List<string>();
+            listValue.Add(financeObject.strNumericValue1.Replace(",", ""));
+            listValue.Add(financeObject.strNumericValue2.Replace(",", ""));
+            listValue.Add(financeObject.strNumericValue3.Replace(",", ""));
+            listValue.Add(financeObject.strNumericValue4.Replace(",", ""));
+            for (int i = 0; i < listResult.Count; i++)
+            {
+                FileUtility.AppendValue(listResult[i], field, listValue[i]);
+            }
         }
         private List<long> ExtractData(HtmlNode node)
         {
